@@ -20,7 +20,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Multiplication;
   private ConceptPresentation props_Reference;
   private ConceptPresentation props_SoSeWorksheet;
-  private ConceptPresentation props_String;
   private ConceptPresentation props_Substraction;
 
   @Override
@@ -102,13 +101,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SoSeWorksheet = cpb.create();
         }
         return props_SoSeWorksheet;
-      case LanguageConceptSwitch.String:
-        if (props_String == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_String = cpb.create();
-        }
-        return props_String;
       case LanguageConceptSwitch.Substraction:
         if (props_Substraction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

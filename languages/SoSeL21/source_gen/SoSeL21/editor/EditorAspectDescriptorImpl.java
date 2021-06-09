@@ -27,8 +27,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
         return Collections.<ConceptEditor>singletonList(new Reference_Editor());
       case 4:
         return Collections.<ConceptEditor>singletonList(new SoSeWorksheet_Editor());
-      case 5:
-        return Collections.<ConceptEditor>singletonList(new String_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -36,5 +34,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x39bf3597a7edec4bL), MetaIdFactory.conceptId(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL), MetaIdFactory.conceptId(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1b9b1aa24ca9280bL), MetaIdFactory.conceptId(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1b9b1aa24caa6fc6L), MetaIdFactory.conceptId(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x39bf3597a7eb9f75L), MetaIdFactory.conceptId(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x5efdd77350ac85c8L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x39bf3597a7edec4bL), MetaIdFactory.conceptId(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL), MetaIdFactory.conceptId(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1b9b1aa24ca9280bL), MetaIdFactory.conceptId(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1b9b1aa24caa6fc6L), MetaIdFactory.conceptId(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x39bf3597a7eb9f75L)).seal();
 }

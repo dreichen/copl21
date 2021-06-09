@@ -20,8 +20,7 @@ public final class LanguageConceptSwitch {
   public static final int Multiplication = 8;
   public static final int Reference = 9;
   public static final int SoSeWorksheet = 10;
-  public static final int String = 11;
-  public static final int Substraction = 12;
+  public static final int Substraction = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L);
@@ -36,7 +35,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x231e7e13c1c93298L, Multiplication);
     builder.put(0x1b9b1aa24caa6fc6L, Reference);
     builder.put(0x39bf3597a7eb9f75L, SoSeWorksheet);
-    builder.put(0x5efdd77350ac85c8L, String);
     builder.put(0x231e7e13c1c93292L, Substraction);
     myIndex = builder.seal();
   }

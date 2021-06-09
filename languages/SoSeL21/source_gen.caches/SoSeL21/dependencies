@@ -4,6 +4,7 @@
     <classNode dependClassName="SoSeL21.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="SoSeL21.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="SoSeL21.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="SoSeL21.intentions.IntentionsDescriptor" />
     <classNode dependClassName="SoSeL21.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="SoSeL21.structure.StructureAspectDescriptor" />
     <classNode dependClassName="SoSeL21.typesystem.TypesystemDescriptor" />
@@ -13,6 +14,7 @@
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.intentions.IntentionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.language.LanguageExtensions" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />

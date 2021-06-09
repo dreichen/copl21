@@ -24,7 +24,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptMultiplication = createDescriptorForMultiplication();
   /*package*/ final ConceptDescriptor myConceptReference = createDescriptorForReference();
   /*package*/ final ConceptDescriptor myConceptSoSeWorksheet = createDescriptorForSoSeWorksheet();
-  /*package*/ final ConceptDescriptor myConceptString = createDescriptorForString();
   /*package*/ final ConceptDescriptor myConceptSubstraction = createDescriptorForSubstraction();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -40,7 +39,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAddition, myConceptAssignment, myConceptBoolean, myConceptDivision, myConceptIContent, myConceptIDeclaration, myConceptIExpression, myConceptInteger, myConceptMultiplication, myConceptReference, myConceptSoSeWorksheet, myConceptString, myConceptSubstraction);
+    return Arrays.asList(myConceptAddition, myConceptAssignment, myConceptBoolean, myConceptDivision, myConceptIContent, myConceptIDeclaration, myConceptIExpression, myConceptInteger, myConceptMultiplication, myConceptReference, myConceptSoSeWorksheet, myConceptSubstraction);
   }
 
   @Override
@@ -69,8 +68,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptReference;
       case LanguageConceptSwitch.SoSeWorksheet:
         return myConceptSoSeWorksheet;
-      case LanguageConceptSwitch.String:
-        return myConceptString;
       case LanguageConceptSwitch.Substraction:
         return myConceptSubstraction;
       default:
@@ -182,15 +179,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("contents", 0x39bf3597a7ee09dfL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c8da40L).optional(true).ordered(true).multiple(true).origin("4161103506187356639").done();
     b.alias("SoSeWorksheet");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForString() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoSeL21", "String", 0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x5efdd77350ac85c8L);
-    b.class_(false, false, false);
-    b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x39bf3597a7edeacbL);
-    b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/6844863898947716552");
-    b.version(2);
-    b.alias("string");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSubstraction() {
