@@ -21,6 +21,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IntVal;
   private ConceptPresentation props_Integer;
   private ConceptPresentation props_Multiplication;
+  private ConceptPresentation props_ParenthesisExpression;
   private ConceptPresentation props_Reference;
   private ConceptPresentation props_SoSeWorksheet;
   private ConceptPresentation props_Substraction;
@@ -110,6 +111,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Multiplication = cpb.create();
         }
         return props_Multiplication;
+      case LanguageConceptSwitch.ParenthesisExpression:
+        if (props_ParenthesisExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ParenthesisExpression = cpb.create();
+        }
+        return props_ParenthesisExpression;
       case LanguageConceptSwitch.Reference:
         if (props_Reference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -25,6 +25,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIntVal = createDescriptorForIntVal();
   /*package*/ final ConceptDescriptor myConceptInteger = createDescriptorForInteger();
   /*package*/ final ConceptDescriptor myConceptMultiplication = createDescriptorForMultiplication();
+  /*package*/ final ConceptDescriptor myConceptParenthesisExpression = createDescriptorForParenthesisExpression();
   /*package*/ final ConceptDescriptor myConceptReference = createDescriptorForReference();
   /*package*/ final ConceptDescriptor myConceptSoSeWorksheet = createDescriptorForSoSeWorksheet();
   /*package*/ final ConceptDescriptor myConceptSubstraction = createDescriptorForSubstraction();
@@ -42,7 +43,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAddition, myConceptAssignment, myConceptBoolean, myConceptDivision, myConceptIContent, myConceptIDeclaration, myConceptIExpression, myConceptInt, myConceptIntRef, myConceptIntVal, myConceptInteger, myConceptMultiplication, myConceptReference, myConceptSoSeWorksheet, myConceptSubstraction);
+    return Arrays.asList(myConceptAddition, myConceptAssignment, myConceptBoolean, myConceptDivision, myConceptIContent, myConceptIDeclaration, myConceptIExpression, myConceptInt, myConceptIntRef, myConceptIntVal, myConceptInteger, myConceptMultiplication, myConceptParenthesisExpression, myConceptReference, myConceptSoSeWorksheet, myConceptSubstraction);
   }
 
   @Override
@@ -73,6 +74,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptInteger;
       case LanguageConceptSwitch.Multiplication:
         return myConceptMultiplication;
+      case LanguageConceptSwitch.ParenthesisExpression:
+        return myConceptParenthesisExpression;
       case LanguageConceptSwitch.Reference:
         return myConceptReference;
       case LanguageConceptSwitch.SoSeWorksheet:
@@ -194,6 +197,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/2530598663949464216");
     b.version(2);
     b.alias("*");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForParenthesisExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoSeL21", "ParenthesisExpression", 0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x165b564d88b1d2d9L);
+    b.class_(false, false, false);
+    b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL);
+    b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/1610976182720910041");
+    b.version(2);
+    b.aggregate("expression", 0x165b564d88b1d4abL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL).optional(false).ordered(true).multiple(false).origin("1610976182720910507").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForReference() {
