@@ -20,6 +20,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIContent = createDescriptorForIContent();
   /*package*/ final ConceptDescriptor myConceptIDeclaration = createDescriptorForIDeclaration();
   /*package*/ final ConceptDescriptor myConceptIExpression = createDescriptorForIExpression();
+  /*package*/ final ConceptDescriptor myConceptInt = createDescriptorForInt();
+  /*package*/ final ConceptDescriptor myConceptIntRef = createDescriptorForIntRef();
+  /*package*/ final ConceptDescriptor myConceptIntVal = createDescriptorForIntVal();
   /*package*/ final ConceptDescriptor myConceptInteger = createDescriptorForInteger();
   /*package*/ final ConceptDescriptor myConceptMultiplication = createDescriptorForMultiplication();
   /*package*/ final ConceptDescriptor myConceptReference = createDescriptorForReference();
@@ -39,7 +42,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAddition, myConceptAssignment, myConceptBoolean, myConceptDivision, myConceptIContent, myConceptIDeclaration, myConceptIExpression, myConceptInteger, myConceptMultiplication, myConceptReference, myConceptSoSeWorksheet, myConceptSubstraction);
+    return Arrays.asList(myConceptAddition, myConceptAssignment, myConceptBoolean, myConceptDivision, myConceptIContent, myConceptIDeclaration, myConceptIExpression, myConceptInt, myConceptIntRef, myConceptIntVal, myConceptInteger, myConceptMultiplication, myConceptReference, myConceptSoSeWorksheet, myConceptSubstraction);
   }
 
   @Override
@@ -60,6 +63,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptIDeclaration;
       case LanguageConceptSwitch.IExpression:
         return myConceptIExpression;
+      case LanguageConceptSwitch.Int:
+        return myConceptInt;
+      case LanguageConceptSwitch.IntRef:
+        return myConceptIntRef;
+      case LanguageConceptSwitch.IntVal:
+        return myConceptIntVal;
       case LanguageConceptSwitch.Integer:
         return myConceptInteger;
       case LanguageConceptSwitch.Multiplication:
@@ -138,8 +147,33 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c8da40L);
     b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/2530598663949464207");
     b.version(2);
-    b.associate("left", 0x231e7e13c1cdeaaeL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1b9b1aa24ca9280bL).optional(false).origin("2530598663949773486").done();
-    b.associate("right", 0x231e7e13c1cdeab0L).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1b9b1aa24ca9280bL).optional(false).origin("2530598663949773488").done();
+    b.aggregate("left", 0x6b55ca2b4354d18L).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x6b55ca2b4372349L).optional(false).ordered(true).multiple(false).origin("483394388890045720").done();
+    b.aggregate("right", 0x6b55ca2b4354d1aL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x6b55ca2b4372349L).optional(false).ordered(true).multiple(false).origin("483394388890045722").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForInt() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoSeL21", "Int", 0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x6b55ca2b4372349L);
+    b.interface_();
+    b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/483394388890166089");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIntRef() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoSeL21", "IntRef", 0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b36L);
+    b.class_(false, false, false);
+    b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x6b55ca2b4372349L);
+    b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/1185174731136576310");
+    b.version(2);
+    b.associate("value", 0x6b55ca2b438e85dL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1b9b1aa24ca9280bL).optional(false).origin("483394388890282077").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIntVal() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoSeL21", "IntVal", 0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b31L);
+    b.class_(false, false, false);
+    b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x6b55ca2b4372349L);
+    b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/1185174731136576305");
+    b.version(2);
+    b.property("value", 0x107296237e2a2b34L).type(PrimitiveTypeId.INTEGER).origin("1185174731136576308").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForInteger() {

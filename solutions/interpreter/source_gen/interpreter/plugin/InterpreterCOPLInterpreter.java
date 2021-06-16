@@ -12,18 +12,19 @@ import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
 import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.mpsutil.interpreter.rt.StopAndReturnException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
 import com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo;
 import com.mbeddr.mpsutil.interpreter.rt.ITypeMapper;
 import com.mbeddr.mpsutil.interpreter.rt.IRelationship;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SProperty;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class InterpreterCOPLInterpreter extends InterpreterBase {
   public InterpreterCOPLInterpreter() {
@@ -37,7 +38,34 @@ public class InterpreterCOPLInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          return SPropertyOperations.getInteger(SLinkOperations.getTarget(node, LINKS.left$sCPA), PROPS.value$D6Nh) + SPropertyOperations.getInteger(SLinkOperations.getTarget(node, LINKS.right$sDjC), PROPS.value$D6Nh);
+          int l = 0;
+          {
+            final SNode intRef = SLinkOperations.getTarget(node, LINKS.left$XEZB);
+            if (SNodeOperations.isInstanceOf(intRef, CONCEPTS.IntRef$ty)) {
+              l = SPropertyOperations.getInteger(SLinkOperations.getTarget(intRef, LINKS.value$pwmv), PROPS.value$D6Nh);
+            }
+          }
+          {
+            final SNode intVal = SLinkOperations.getTarget(node, LINKS.left$XEZB);
+            if (SNodeOperations.isInstanceOf(intVal, CONCEPTS.IntVal$gW)) {
+              l = SPropertyOperations.getInteger(intVal, PROPS.value$QidL);
+            }
+          }
+          int r = 0;
+          {
+            final SNode intRef = SLinkOperations.getTarget(node, LINKS.right$XFtD);
+            if (SNodeOperations.isInstanceOf(intRef, CONCEPTS.IntRef$ty)) {
+              r = SPropertyOperations.getInteger(SLinkOperations.getTarget(intRef, LINKS.value$pwmv), PROPS.value$D6Nh);
+            }
+          }
+          {
+            final SNode intVal = SLinkOperations.getTarget(node, LINKS.right$XFtD);
+            if (SNodeOperations.isInstanceOf(intVal, CONCEPTS.IntVal$gW)) {
+              r = SPropertyOperations.getInteger(intVal, PROPS.value$QidL);
+            }
+          }
+
+          return l + r;
         } catch (StopAndReturnException stop) {
           return stop.value();
         } catch (InterpreterEscapeException ex) {
@@ -66,7 +94,34 @@ public class InterpreterCOPLInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          return SPropertyOperations.getInteger(SLinkOperations.getTarget(node, LINKS.left$sCPA), PROPS.value$D6Nh) / SPropertyOperations.getInteger(SLinkOperations.getTarget(node, LINKS.right$sDjC), PROPS.value$D6Nh);
+          int l = 0;
+          {
+            final SNode intRef = SLinkOperations.getTarget(node, LINKS.left$XEZB);
+            if (SNodeOperations.isInstanceOf(intRef, CONCEPTS.IntRef$ty)) {
+              l = SPropertyOperations.getInteger(SLinkOperations.getTarget(intRef, LINKS.value$pwmv), PROPS.value$D6Nh);
+            }
+          }
+          {
+            final SNode intVal = SLinkOperations.getTarget(node, LINKS.left$XEZB);
+            if (SNodeOperations.isInstanceOf(intVal, CONCEPTS.IntVal$gW)) {
+              l = SPropertyOperations.getInteger(intVal, PROPS.value$QidL);
+            }
+          }
+          int r = 0;
+          {
+            final SNode intRef = SLinkOperations.getTarget(node, LINKS.right$XFtD);
+            if (SNodeOperations.isInstanceOf(intRef, CONCEPTS.IntRef$ty)) {
+              r = SPropertyOperations.getInteger(SLinkOperations.getTarget(intRef, LINKS.value$pwmv), PROPS.value$D6Nh);
+            }
+          }
+          {
+            final SNode intVal = SLinkOperations.getTarget(node, LINKS.right$XFtD);
+            if (SNodeOperations.isInstanceOf(intVal, CONCEPTS.IntVal$gW)) {
+              r = SPropertyOperations.getInteger(intVal, PROPS.value$QidL);
+            }
+          }
+
+          return l / r;
         } catch (StopAndReturnException stop) {
           return stop.value();
         } catch (InterpreterEscapeException ex) {
@@ -95,7 +150,34 @@ public class InterpreterCOPLInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          return SPropertyOperations.getInteger(SLinkOperations.getTarget(node, LINKS.left$sCPA), PROPS.value$D6Nh) * SPropertyOperations.getInteger(SLinkOperations.getTarget(node, LINKS.right$sDjC), PROPS.value$D6Nh);
+          int l = 0;
+          {
+            final SNode intRef = SLinkOperations.getTarget(node, LINKS.left$XEZB);
+            if (SNodeOperations.isInstanceOf(intRef, CONCEPTS.IntRef$ty)) {
+              l = SPropertyOperations.getInteger(SLinkOperations.getTarget(intRef, LINKS.value$pwmv), PROPS.value$D6Nh);
+            }
+          }
+          {
+            final SNode intVal = SLinkOperations.getTarget(node, LINKS.left$XEZB);
+            if (SNodeOperations.isInstanceOf(intVal, CONCEPTS.IntVal$gW)) {
+              l = SPropertyOperations.getInteger(intVal, PROPS.value$QidL);
+            }
+          }
+          int r = 0;
+          {
+            final SNode intRef = SLinkOperations.getTarget(node, LINKS.right$XFtD);
+            if (SNodeOperations.isInstanceOf(intRef, CONCEPTS.IntRef$ty)) {
+              r = SPropertyOperations.getInteger(SLinkOperations.getTarget(intRef, LINKS.value$pwmv), PROPS.value$D6Nh);
+            }
+          }
+          {
+            final SNode intVal = SLinkOperations.getTarget(node, LINKS.right$XFtD);
+            if (SNodeOperations.isInstanceOf(intVal, CONCEPTS.IntVal$gW)) {
+              r = SPropertyOperations.getInteger(intVal, PROPS.value$QidL);
+            }
+          }
+
+          return l * r;
         } catch (StopAndReturnException stop) {
           return stop.value();
         } catch (InterpreterEscapeException ex) {
@@ -124,7 +206,34 @@ public class InterpreterCOPLInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          return SPropertyOperations.getInteger(SLinkOperations.getTarget(node, LINKS.left$sCPA), PROPS.value$D6Nh) - SPropertyOperations.getInteger(SLinkOperations.getTarget(node, LINKS.right$sDjC), PROPS.value$D6Nh);
+          int l = 0;
+          {
+            final SNode intRef = SLinkOperations.getTarget(node, LINKS.left$XEZB);
+            if (SNodeOperations.isInstanceOf(intRef, CONCEPTS.IntRef$ty)) {
+              l = SPropertyOperations.getInteger(SLinkOperations.getTarget(intRef, LINKS.value$pwmv), PROPS.value$D6Nh);
+            }
+          }
+          {
+            final SNode intVal = SLinkOperations.getTarget(node, LINKS.left$XEZB);
+            if (SNodeOperations.isInstanceOf(intVal, CONCEPTS.IntVal$gW)) {
+              l = SPropertyOperations.getInteger(intVal, PROPS.value$QidL);
+            }
+          }
+          int r = 0;
+          {
+            final SNode intRef = SLinkOperations.getTarget(node, LINKS.right$XFtD);
+            if (SNodeOperations.isInstanceOf(intRef, CONCEPTS.IntRef$ty)) {
+              r = SPropertyOperations.getInteger(SLinkOperations.getTarget(intRef, LINKS.value$pwmv), PROPS.value$D6Nh);
+            }
+          }
+          {
+            final SNode intVal = SLinkOperations.getTarget(node, LINKS.right$XFtD);
+            if (SNodeOperations.isInstanceOf(intVal, CONCEPTS.IntVal$gW)) {
+              r = SPropertyOperations.getInteger(intVal, PROPS.value$QidL);
+            }
+          }
+
+          return l - r;
         } catch (StopAndReturnException stop) {
           return stop.value();
         } catch (InterpreterEscapeException ex) {
@@ -159,18 +268,22 @@ public class InterpreterCOPLInterpreter extends InterpreterBase {
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink right$sDjC = MetaAdapterFactory.getReferenceLink(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL, 0x231e7e13c1cdeab0L, "right");
-    /*package*/ static final SReferenceLink left$sCPA = MetaAdapterFactory.getReferenceLink(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL, 0x231e7e13c1cdeaaeL, "left");
-  }
-
-  private static final class PROPS {
-    /*package*/ static final SProperty value$D6Nh = MetaAdapterFactory.getProperty(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1b9b1aa24ca9280bL, 0x1b9b1aa24ca9280eL, "value");
+    /*package*/ static final SContainmentLink left$XEZB = MetaAdapterFactory.getContainmentLink(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL, 0x6b55ca2b4354d18L, "left");
+    /*package*/ static final SReferenceLink value$pwmv = MetaAdapterFactory.getReferenceLink(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b36L, 0x6b55ca2b438e85dL, "value");
+    /*package*/ static final SContainmentLink right$XFtD = MetaAdapterFactory.getContainmentLink(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL, 0x6b55ca2b4354d1aL, "right");
   }
 
   private static final class CONCEPTS {
+    /*package*/ static final SConcept IntRef$ty = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b36L, "SoSeL21.structure.IntRef");
+    /*package*/ static final SConcept IntVal$gW = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b31L, "SoSeL21.structure.IntVal");
     /*package*/ static final SConcept Addition$PJ = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c93295L, "SoSeL21.structure.Addition");
     /*package*/ static final SConcept Division$fm = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1ca862eL, "SoSeL21.structure.Division");
     /*package*/ static final SConcept Multiplication$Rc = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c93298L, "SoSeL21.structure.Multiplication");
     /*package*/ static final SConcept Substraction$Oi = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c93292L, "SoSeL21.structure.Substraction");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty value$D6Nh = MetaAdapterFactory.getProperty(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1b9b1aa24ca9280bL, 0x1b9b1aa24ca9280eL, "value");
+    /*package*/ static final SProperty value$QidL = MetaAdapterFactory.getProperty(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b31L, 0x107296237e2a2b34L, "value");
   }
 }

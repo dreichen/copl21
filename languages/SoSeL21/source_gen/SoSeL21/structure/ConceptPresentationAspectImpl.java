@@ -16,6 +16,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IContent;
   private ConceptPresentation props_IDeclaration;
   private ConceptPresentation props_IExpression;
+  private ConceptPresentation props_Int;
+  private ConceptPresentation props_IntRef;
+  private ConceptPresentation props_IntVal;
   private ConceptPresentation props_Integer;
   private ConceptPresentation props_Multiplication;
   private ConceptPresentation props_Reference;
@@ -73,6 +76,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IExpression = cpb.create();
         }
         return props_IExpression;
+      case LanguageConceptSwitch.Int:
+        if (props_Int == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Int = cpb.create();
+        }
+        return props_Int;
+      case LanguageConceptSwitch.IntRef:
+        if (props_IntRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b36L, 0x6b55ca2b438e85dL, "value", "", "");
+          props_IntRef = cpb.create();
+        }
+        return props_IntRef;
+      case LanguageConceptSwitch.IntVal:
+        if (props_IntVal == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("IntVal");
+          props_IntVal = cpb.create();
+        }
+        return props_IntVal;
       case LanguageConceptSwitch.Integer:
         if (props_Integer == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

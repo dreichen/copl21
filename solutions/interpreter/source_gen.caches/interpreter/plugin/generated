@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-7q624qjv720cb6cmzthfrfy7lr1tmnt">
-  <files names="COPLInterpreter_extension.java:ExtensionDescriptor.java:InterpreterCOPLInterpreter.java" />
+<product version="3" modelHash="-a3nn9sj7fpa7r9c7l94ql61xtfu35js">
+  <files names="COPLInterpreter_extension.java:EvalHelper.java:ExtensionDescriptor.java:InterpreterCOPLInterpreter.java" />
 </product>
 

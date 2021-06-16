@@ -16,11 +16,14 @@ public final class LanguageConceptSwitch {
   public static final int IContent = 4;
   public static final int IDeclaration = 5;
   public static final int IExpression = 6;
-  public static final int Integer = 7;
-  public static final int Multiplication = 8;
-  public static final int Reference = 9;
-  public static final int SoSeWorksheet = 10;
-  public static final int Substraction = 11;
+  public static final int Int = 7;
+  public static final int IntRef = 8;
+  public static final int IntVal = 9;
+  public static final int Integer = 10;
+  public static final int Multiplication = 11;
+  public static final int Reference = 12;
+  public static final int SoSeWorksheet = 13;
+  public static final int Substraction = 14;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L);
@@ -31,6 +34,9 @@ public final class LanguageConceptSwitch {
     builder.put(0x231e7e13c1c8da40L, IContent);
     builder.put(0x39bf3597a7edeacbL, IDeclaration);
     builder.put(0x231e7e13c1c9328fL, IExpression);
+    builder.put(0x6b55ca2b4372349L, Int);
+    builder.put(0x107296237e2a2b36L, IntRef);
+    builder.put(0x107296237e2a2b31L, IntVal);
     builder.put(0x1b9b1aa24ca9280bL, Integer);
     builder.put(0x231e7e13c1c93298L, Multiplication);
     builder.put(0x1b9b1aa24caa6fc6L, Reference);

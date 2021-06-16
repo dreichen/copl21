@@ -18,9 +18,16 @@
         <property id="1989212944787384334" name="value" index="1nczaG" />
       </concept>
       <concept id="2530598663949464213" name="SoSeL21.structure.Addition" flags="ng" index="3yPOM6" />
+      <concept id="2530598663949464216" name="SoSeL21.structure.Multiplication" flags="ng" index="3yPOMb" />
       <concept id="2530598663949464207" name="SoSeL21.structure.IExpression" flags="ng" index="3yPOMs">
-        <reference id="2530598663949773488" name="right" index="3yOTiz" />
-        <reference id="2530598663949773486" name="left" index="3yOTiX" />
+        <child id="483394388890045722" name="right" index="2Mw16S" />
+        <child id="483394388890045720" name="left" index="2Mw16U" />
+      </concept>
+      <concept id="1185174731136576305" name="SoSeL21.structure.IntVal" flags="ng" index="1ImbOi">
+        <property id="1185174731136576308" name="value" index="1ImbOn" />
+      </concept>
+      <concept id="1185174731136576310" name="SoSeL21.structure.IntRef" flags="ng" index="1ImbOl">
+        <reference id="483394388890282077" name="value" index="2MzrjZ" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -54,9 +61,29 @@
       <property role="TrG5h" value="num" />
       <property role="1nczaG" value="8" />
     </node>
-    <node concept="3yPOM6" id="2cuvxf1Not0" role="2ukjL8">
-      <ref role="3yOTiX" node="2cuvxf1MCol" resolve="num" />
-      <ref role="3yOTiz" node="2cuvxf1MCol" resolve="num" />
+    <node concept="3yPOM6" id="qPnaaOdMS$" role="2ukjL8">
+      <node concept="1ImbOi" id="qPnaaOdMSY" role="2Mw16U">
+        <property role="1ImbOn" value="8" />
+      </node>
+      <node concept="1ImbOi" id="qPnaaOdMSV" role="2Mw16S">
+        <property role="1ImbOn" value="8" />
+      </node>
+    </node>
+    <node concept="3yPOMb" id="qPnaaOeF8s" role="2ukjL8">
+      <node concept="1ImbOl" id="qPnaaOeF8H" role="2Mw16U">
+        <ref role="2MzrjZ" node="2cuvxf1MCol" resolve="num" />
+      </node>
+      <node concept="1ImbOi" id="qPnaaOeF8P" role="2Mw16S">
+        <property role="1ImbOn" value="2" />
+      </node>
+    </node>
+    <node concept="3yPOM6" id="qPnaaOeGc3" role="2ukjL8">
+      <node concept="1ImbOi" id="qPnaaOeGcn" role="2Mw16U">
+        <property role="1ImbOn" value="1" />
+      </node>
+      <node concept="1ImbOl" id="qPnaaOeGcq" role="2Mw16S">
+        <ref role="2MzrjZ" node="2cuvxf1MCol" resolve="num" />
+      </node>
     </node>
   </node>
   <node concept="2ulaFy" id="5VXPRdgFfBp">
