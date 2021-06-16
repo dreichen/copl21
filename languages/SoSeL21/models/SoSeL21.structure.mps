@@ -133,15 +133,13 @@
       <property role="IQ2ns" value="483394388890045720" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="left" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="qPnaaOdMd9" resolve="Int" />
+      <ref role="20lvS9" node="2cuvxf1Mjaf" resolve="IExpression" />
     </node>
     <node concept="1TJgyj" id="qPnaaOdkOq" role="1TKVEi">
       <property role="IQ2ns" value="483394388890045722" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="right" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="qPnaaOdMd9" resolve="Int" />
+      <ref role="20lvS9" node="2cuvxf1Mjaf" resolve="IExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="2cuvxf1Mjai">
@@ -226,6 +224,9 @@
     <property role="EcuMT" value="483394388890166089" />
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="Int" />
+    <node concept="PrWs8" id="qPnaaOePL9" role="PrDN$">
+      <ref role="PrY4T" node="2cuvxf1Mjaf" resolve="IExpression" />
+    </node>
   </node>
 </model>
 

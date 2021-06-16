@@ -147,13 +147,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c8da40L);
     b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/2530598663949464207");
     b.version(2);
-    b.aggregate("left", 0x6b55ca2b4354d18L).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x6b55ca2b4372349L).optional(false).ordered(true).multiple(false).origin("483394388890045720").done();
-    b.aggregate("right", 0x6b55ca2b4354d1aL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x6b55ca2b4372349L).optional(false).ordered(true).multiple(false).origin("483394388890045722").done();
+    b.aggregate("left", 0x6b55ca2b4354d18L).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL).optional(true).ordered(true).multiple(false).origin("483394388890045720").done();
+    b.aggregate("right", 0x6b55ca2b4354d1aL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL).optional(true).ordered(true).multiple(false).origin("483394388890045722").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForInt() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoSeL21", "Int", 0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x6b55ca2b4372349L);
     b.interface_();
+    b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL);
     b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/483394388890166089");
     b.version(2);
     return b.create();

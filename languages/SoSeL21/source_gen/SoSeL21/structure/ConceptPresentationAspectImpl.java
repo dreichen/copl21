@@ -85,14 +85,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.IntRef:
         if (props_IntRef == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b36L, 0x6b55ca2b438e85dL, "value", "", "");
+          cpb.presentationByName();
           props_IntRef = cpb.create();
         }
         return props_IntRef;
       case LanguageConceptSwitch.IntVal:
         if (props_IntVal == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("IntVal");
+          cpb.presentationByName();
           props_IntVal = cpb.create();
         }
         return props_IntVal;
