@@ -16,7 +16,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="19,0,139,0" name="SoSeL21.editor.EditorAspectDescriptorImpl" />
+      <unit at="19,0,143,0" name="SoSeL21.editor.EditorAspectDescriptorImpl" />
     </file>
     <file name="GrammarActionsDescriptor.java">
       <unit at="238,51,242,5" name="SoSeL21.editor.GrammarActionsDescriptor$3" />
@@ -57,15 +57,20 @@
       <unit at="46,0,56,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_Assignment$GrammarCellsSubstituteMenuPart_1f49ys_a" />
       <unit at="21,0,61,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_Assignment" />
     </file>
+    <file name="GrammarCellsSubstituteMenu_Bool.java">
+      <unit at="57,0,60,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_Bool$CONCEPTS" />
+      <unit at="46,0,56,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_Bool$GrammarCellsSubstituteMenuPart_8h4yyr_a" />
+      <unit at="21,0,61,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_Bool" />
+    </file>
+    <file name="GrammarCellsSubstituteMenu_BoolVal.java">
+      <unit at="57,0,60,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_BoolVal$CONCEPTS" />
+      <unit at="46,0,56,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_BoolVal$GrammarCellsSubstituteMenuPart_uw0mfx_a" />
+      <unit at="21,0,61,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_BoolVal" />
+    </file>
     <file name="GrammarCellsSubstituteMenu_Boolean.java">
       <unit at="57,0,60,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_Boolean$CONCEPTS" />
       <unit at="46,0,56,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_Boolean$GrammarCellsSubstituteMenuPart_uw0s06_a" />
       <unit at="21,0,61,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_Boolean" />
-    </file>
-    <file name="GrammarCellsSubstituteMenu_BooleanExpression.java">
-      <unit at="57,0,60,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_BooleanExpression$CONCEPTS" />
-      <unit at="46,0,56,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_BooleanExpression$GrammarCellsSubstituteMenuPart_sdg5nm_a" />
-      <unit at="21,0,61,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_BooleanExpression" />
     </file>
     <file name="GrammarCellsSubstituteMenu_Division.java">
       <unit at="57,0,60,0" name="SoSeL21.editor.GrammarCellsSubstituteMenu_Division$CONCEPTS" />
@@ -1305,6 +1310,80 @@
       <unit id="1928515635053974251" at="168,0,219,0" name="SoSeL21.editor.IfStatement_EditorBuilder_a$ifBodySingleRoleHandler_eb7h0d_b1a" />
       <unit id="1928515635053974251" at="265,0,316,0" name="SoSeL21.editor.IfStatement_EditorBuilder_a$elseBodySingleRoleHandler_eb7h0d_b4a" />
       <unit id="1928515635053974251" at="28,0,329,0" name="SoSeL21.editor.IfStatement_EditorBuilder_a" />
+    </file>
+  </root>
+  <root nodeRef="r:fb00adde-e008-41db-87ff-8075062c57f8(SoSeL21.editor)/1928515635055339188">
+    <file name="BoolVal_Editor.java">
+      <node id="1928515635055339188" at="11,79,12,73" concept="8" />
+      <node id="1928515635055339188" at="11,0,14,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="1928515635055339188" at="11,79,12,73" />
+      <scope id="1928515635055339188" at="11,0,14,0">
+        <var name="editorContext" id="1928515635055339188" />
+        <var name="node" id="1928515635055339188" />
+      </scope>
+      <unit id="1928515635055339188" at="10,0,15,0" name="SoSeL21.editor.BoolVal_Editor" />
+    </file>
+    <file name="BoolVal_EditorBuilder_a.java">
+      <node id="1928515635055339188" at="30,87,31,19" concept="12" />
+      <node id="1928515635055339188" at="31,19,32,18" concept="2" />
+      <node id="1928515635055339188" at="37,26,38,18" concept="8" />
+      <node id="1928515635055339188" at="41,39,42,30" concept="8" />
+      <node id="1928515635055339190" at="45,41,46,39" concept="2" />
+      <node id="1928515635055339190" at="47,9,48,50" concept="7" />
+      <node id="1928515635055339190" at="48,50,49,76" concept="2" />
+      <node id="1928515635055339190" at="49,76,50,149" concept="7" />
+      <node id="1928515635055339190" at="50,149,51,46" concept="2" />
+      <node id="1928515635055339190" at="51,46,52,45" concept="2" />
+      <node id="1928515635055339190" at="52,45,53,30" concept="2" />
+      <node id="1928515635055339190" at="53,30,54,33" concept="2" />
+      <node id="1928515635055339190" at="54,33,55,86" concept="2" />
+      <node id="1928515635055339190" at="55,86,56,33" concept="2" />
+      <node id="1928515635055339190" at="56,33,57,155" concept="7" />
+      <node id="1928515635055339190" at="59,41,60,118" concept="8" />
+      <node id="1928515635055339190" at="63,74,64,89" concept="7" />
+      <node id="1928515635055339190" at="64,89,65,145" concept="8" />
+      <node id="1928515635055339190" at="66,12,67,24" concept="8" />
+      <node id="1928515635055339190" at="68,15,69,40" concept="2" />
+      <node id="1928515635055339188" at="74,0,75,0" concept="11" trace="value$$s_A" />
+      <node id="1928515635055339188" at="78,0,79,0" concept="11" trace="PropertyAttribute$Gb" />
+      <node id="1928515635055339188" at="27,0,29,0" concept="3" trace="myNode" />
+      <node id="1928515635055339188" at="41,0,44,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1928515635055339190" at="59,0,62,0" concept="6" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1928515635055339188" at="30,0,34,0" concept="1" trace="BoolVal_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1928515635055339188" at="35,0,40,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1928515635055339190" at="57,155,62,9" concept="7" />
+      <node id="1928515635055339190" at="62,9,67,24" concept="5" />
+      <node id="1928515635055339190" at="46,39,70,5" concept="13" />
+      <node id="1928515635055339190" at="45,0,72,0" concept="6" trace="createProperty_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="1928515635055339188" at="37,26,38,18" />
+      <scope id="1928515635055339188" at="41,39,42,30" />
+      <scope id="1928515635055339190" at="59,41,60,118" />
+      <scope id="1928515635055339190" at="68,15,69,40" />
+      <scope id="1928515635055339188" at="30,87,32,18" />
+      <scope id="1928515635055339190" at="63,74,65,145">
+        <var name="manager" id="1928515635055339190" />
+      </scope>
+      <scope id="1928515635055339188" at="41,0,44,0" />
+      <scope id="1928515635055339190" at="59,0,62,0">
+        <var name="it" id="1928515635055339190" />
+      </scope>
+      <scope id="1928515635055339188" at="30,0,34,0">
+        <var name="context" id="1928515635055339188" />
+        <var name="node" id="1928515635055339188" />
+      </scope>
+      <scope id="1928515635055339188" at="35,0,40,0" />
+      <scope id="1928515635055339190" at="47,9,67,24">
+        <var name="currentPropertyAttributes" id="1928515635055339190" />
+        <var name="editorCell" id="1928515635055339190" />
+        <var name="property" id="1928515635055339190" />
+        <var name="propertyAttributes" id="1928515635055339190" />
+      </scope>
+      <scope id="1928515635055339190" at="45,41,70,5" />
+      <scope id="1928515635055339190" at="45,0,72,0" />
+      <unit id="1928515635055339188" at="73,0,76,0" name="SoSeL21.editor.BoolVal_EditorBuilder_a$PROPS" />
+      <unit id="1928515635055339188" at="77,0,80,0" name="SoSeL21.editor.BoolVal_EditorBuilder_a$CONCEPTS" />
+      <unit id="1928515635055339190" at="58,102,62,7" name="SoSeL21.editor.BoolVal_EditorBuilder_a$1" />
+      <unit id="1928515635055339188" at="26,0,81,0" name="SoSeL21.editor.BoolVal_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:fb00adde-e008-41db-87ff-8075062c57f8(SoSeL21.editor)/1989212944787384350">

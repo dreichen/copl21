@@ -10,10 +10,12 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Addition;
+  private ConceptPresentation props_AndExpression;
   private ConceptPresentation props_ArithmeticExpression;
   private ConceptPresentation props_Assignment;
+  private ConceptPresentation props_Bool;
+  private ConceptPresentation props_BoolVal;
   private ConceptPresentation props_Boolean;
-  private ConceptPresentation props_BooleanExpression;
   private ConceptPresentation props_Division;
   private ConceptPresentation props_GreaterEqualExpression;
   private ConceptPresentation props_GreaterExpression;
@@ -28,6 +30,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_LessEqualExpression;
   private ConceptPresentation props_LessExpression;
   private ConceptPresentation props_Multiplication;
+  private ConceptPresentation props_OrExpression;
   private ConceptPresentation props_ParenthesisExpression;
   private ConceptPresentation props_Reference;
   private ConceptPresentation props_SoSeWorksheet;
@@ -47,6 +50,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Addition = cpb.create();
         }
         return props_Addition;
+      case LanguageConceptSwitch.AndExpression:
+        if (props_AndExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_AndExpression = cpb.create();
+        }
+        return props_AndExpression;
       case LanguageConceptSwitch.ArithmeticExpression:
         if (props_ArithmeticExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -60,6 +70,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Assignment = cpb.create();
         }
         return props_Assignment;
+      case LanguageConceptSwitch.Bool:
+        if (props_Bool == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Bool = cpb.create();
+        }
+        return props_Bool;
+      case LanguageConceptSwitch.BoolVal:
+        if (props_BoolVal == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_BoolVal = cpb.create();
+        }
+        return props_BoolVal;
       case LanguageConceptSwitch.Boolean:
         if (props_Boolean == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -67,12 +90,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Boolean = cpb.create();
         }
         return props_Boolean;
-      case LanguageConceptSwitch.BooleanExpression:
-        if (props_BooleanExpression == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_BooleanExpression = cpb.create();
-        }
-        return props_BooleanExpression;
       case LanguageConceptSwitch.Division:
         if (props_Division == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -167,6 +184,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Multiplication = cpb.create();
         }
         return props_Multiplication;
+      case LanguageConceptSwitch.OrExpression:
+        if (props_OrExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_OrExpression = cpb.create();
+        }
+        return props_OrExpression;
       case LanguageConceptSwitch.ParenthesisExpression:
         if (props_ParenthesisExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
