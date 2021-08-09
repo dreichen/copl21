@@ -7,6 +7,7 @@
   <imports />
   <registry>
     <language id="7e642a5f-6d9b-49f5-8159-56089ac1a1e9" name="SoSeL21">
+      <concept id="1928515635053610541" name="SoSeL21.structure.LessEqualExpression" flags="ng" index="21UN3H" />
       <concept id="4161103506187349067" name="SoSeL21.structure.Boolean" flags="ng" index="2ukHBs" />
       <concept id="4161103506187198325" name="SoSeL21.structure.SoSeWorksheet" flags="ng" index="2ulaFy">
         <child id="4161103506187356639" name="contents" index="2ukjL8" />
@@ -404,6 +405,22 @@
       </node>
       <node concept="1ImbOi" id="1prl$Q8JFhC" role="2Mw16S">
         <property role="1ImbOn" value="2" />
+      </node>
+    </node>
+    <node concept="3yPOM6" id="1F3tG2ra1o3" role="2ukjL8">
+      <node concept="1ImbOi" id="1F3tG2ra1ql" role="2Mw16U">
+        <property role="1ImbOn" value="1" />
+      </node>
+      <node concept="1ImbOi" id="1F3tG2ra1qn" role="2Mw16S">
+        <property role="1ImbOn" value="2" />
+      </node>
+    </node>
+    <node concept="21UN3H" id="1F3tG2ra5gb" role="2ukjL8">
+      <node concept="1ImbOi" id="1F3tG2ra5iv" role="2Mw16U">
+        <property role="1ImbOn" value="2" />
+      </node>
+      <node concept="1ImbOi" id="1F3tG2ra5ix" role="2Mw16S">
+        <property role="1ImbOn" value="1" />
       </node>
     </node>
   </node>

@@ -148,6 +148,152 @@ public class InterpreterCOPLInterpreter extends InterpreterBase {
         return true;
       }
     });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.LessExpression$$9, "r:7adc6d04-8e3f-4e39-821a-acd3f37b96c5(interpreter.plugin)/1928515635053624997", true) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          return Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.left$XEZB))) < Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.right$XFtD)));
+        } catch (StopAndReturnException stop) {
+          return stop.value();
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("<()", node, ex, trace);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("LessExpression");
+      }
+
+      @Override
+      public String toString() {
+        return "LessExpression";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
+      }
+    });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.GreaterExpression$JL, "r:7adc6d04-8e3f-4e39-821a-acd3f37b96c5(interpreter.plugin)/1928515635053644078", true) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          return Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.left$XEZB))) > Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.right$XFtD)));
+        } catch (StopAndReturnException stop) {
+          return stop.value();
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException(">()", node, ex, trace);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("GreaterExpression");
+      }
+
+      @Override
+      public String toString() {
+        return "GreaterExpression";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
+      }
+    });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.UnequalExpression$Na, "r:7adc6d04-8e3f-4e39-821a-acd3f37b96c5(interpreter.plugin)/1928515635053659770", true) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          return Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.left$XEZB))) != Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.right$XFtD)));
+        } catch (StopAndReturnException stop) {
+          return stop.value();
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("!=()", node, ex, trace);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("UnequalExpression");
+      }
+
+      @Override
+      public String toString() {
+        return "UnequalExpression";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
+      }
+    });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.LessEqualExpression$YM, "r:7adc6d04-8e3f-4e39-821a-acd3f37b96c5(interpreter.plugin)/1928515635053675658", true) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          return Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.left$XEZB))) <= Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.right$XFtD)));
+        } catch (StopAndReturnException stop) {
+          return stop.value();
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("<=()", node, ex, trace);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("LessEqualExpression");
+      }
+
+      @Override
+      public String toString() {
+        return "LessEqualExpression";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
+      }
+    });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.GreaterEqualExpression$2b, "r:7adc6d04-8e3f-4e39-821a-acd3f37b96c5(interpreter.plugin)/1928515635053682262", true) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          return Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.left$XEZB))) >= Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.right$XFtD)));
+
+        } catch (StopAndReturnException stop) {
+          return stop.value();
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException(">=()", node, ex, trace);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("GreaterEqualExpression");
+      }
+
+      @Override
+      public String toString() {
+        return "GreaterEqualExpression";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
+      }
+    });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.ParenthesisExpression$$t, "r:7adc6d04-8e3f-4e39-821a-acd3f37b96c5(interpreter.plugin)/1610976182721422644", true) {
       public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
         try {
@@ -258,6 +404,11 @@ public class InterpreterCOPLInterpreter extends InterpreterBase {
     /*package*/ static final SConcept Division$fm = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1ca862eL, "SoSeL21.structure.Division");
     /*package*/ static final SConcept Multiplication$Rc = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c93298L, "SoSeL21.structure.Multiplication");
     /*package*/ static final SConcept Substraction$Oi = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c93292L, "SoSeL21.structure.Substraction");
+    /*package*/ static final SConcept LessExpression$$9 = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b284620L, "SoSeL21.structure.LessExpression");
+    /*package*/ static final SConcept GreaterExpression$JL = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b284623L, "SoSeL21.structure.GreaterExpression");
+    /*package*/ static final SConcept UnequalExpression$Na = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b28462aL, "SoSeL21.structure.UnequalExpression");
+    /*package*/ static final SConcept LessEqualExpression$YM = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b28462dL, "SoSeL21.structure.LessEqualExpression");
+    /*package*/ static final SConcept GreaterEqualExpression$2b = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b284634L, "SoSeL21.structure.GreaterEqualExpression");
     /*package*/ static final SConcept ParenthesisExpression$$t = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x165b564d88b1d2d9L, "SoSeL21.structure.ParenthesisExpression");
     /*package*/ static final SConcept IntRef$ty = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b36L, "SoSeL21.structure.IntRef");
     /*package*/ static final SConcept IntVal$gW = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b31L, "SoSeL21.structure.IntVal");

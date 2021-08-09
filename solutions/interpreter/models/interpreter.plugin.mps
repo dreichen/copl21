@@ -20,6 +20,8 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
+      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
@@ -66,6 +68,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -91,6 +94,8 @@
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -337,7 +342,218 @@
         </node>
       </node>
     </node>
-    <node concept="lHU7p" id="1prl$Q8JimI" role="qq9xR" />
+    <node concept="qq9P1" id="1F3tG2ra7U_" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="v8ga:1F3tG2ra4ow" resolve="LessExpression" />
+      <node concept="3dA_Gj" id="1F3tG2ra8DS" role="3vQZUl">
+        <node concept="9aQIb" id="1F3tG2ra8DU" role="3vcmbn">
+          <node concept="3clFbS" id="1F3tG2ra8DW" role="9aQI4">
+            <node concept="3cpWs6" id="1F3tG2ra8E9" role="3cqZAp">
+              <node concept="3eOVzh" id="1F3tG2rabG6" role="3cqZAk">
+                <node concept="2YIFZM" id="1F3tG2ra9uK" role="3uHU7B">
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="2YIFZM" id="1F3tG2ra9_V" role="37wK5m">
+                    <ref role="37wK5l" node="4hjKlK6MTVW" resolve="eval" />
+                    <ref role="1Pybhc" node="3JEE7152ea2" resolve="EvalHelper" />
+                    <node concept="2OqwBi" id="1F3tG2ra9Nr" role="37wK5m">
+                      <node concept="oxGPV" id="1F3tG2ra9Dp" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1F3tG2raa5C" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v8ga:qPnaaOdkOo" resolve="left" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="1F3tG2raaO8" role="3uHU7w">
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="2YIFZM" id="1F3tG2rab7e" role="37wK5m">
+                    <ref role="37wK5l" node="4hjKlK6MTVW" resolve="eval" />
+                    <ref role="1Pybhc" node="3JEE7152ea2" resolve="EvalHelper" />
+                    <node concept="2OqwBi" id="1F3tG2rabn7" role="37wK5m">
+                      <node concept="oxGPV" id="1F3tG2rabbX" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1F3tG2rabD0" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v8ga:qPnaaOdkOq" resolve="right" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="1F3tG2rac$I" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="v8ga:1F3tG2ra4oz" resolve="GreaterExpression" />
+      <node concept="3dA_Gj" id="1F3tG2racL_" role="3vQZUl">
+        <node concept="9aQIb" id="1F3tG2racLB" role="3vcmbn">
+          <node concept="3clFbS" id="1F3tG2racLD" role="9aQI4">
+            <node concept="3cpWs6" id="1F3tG2racLS" role="3cqZAp">
+              <node concept="3eOSWO" id="1F3tG2radZ2" role="3cqZAk">
+                <node concept="2YIFZM" id="1F3tG2racRf" role="3uHU7B">
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="2YIFZM" id="1F3tG2racZg" role="37wK5m">
+                    <ref role="37wK5l" node="4hjKlK6MTVW" resolve="eval" />
+                    <ref role="1Pybhc" node="3JEE7152ea2" resolve="EvalHelper" />
+                    <node concept="2OqwBi" id="1F3tG2raddq" role="37wK5m">
+                      <node concept="oxGPV" id="1F3tG2rad3o" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1F3tG2radvB" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v8ga:qPnaaOdkOo" resolve="left" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="1F3tG2raekc" role="3uHU7w">
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="2YIFZM" id="1F3tG2raeKn" role="37wK5m">
+                    <ref role="37wK5l" node="4hjKlK6MTVW" resolve="eval" />
+                    <ref role="1Pybhc" node="3JEE7152ea2" resolve="EvalHelper" />
+                    <node concept="2OqwBi" id="1F3tG2raeZy" role="37wK5m">
+                      <node concept="oxGPV" id="1F3tG2raeP4" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1F3tG2rafvo" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v8ga:qPnaaOdkOq" resolve="right" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="1F3tG2ragpU" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="v8ga:1F3tG2ra4oE" resolve="UnequalExpression" />
+      <node concept="3dA_Gj" id="1F3tG2ragCC" role="3vQZUl">
+        <node concept="9aQIb" id="1F3tG2ragCE" role="3vcmbn">
+          <node concept="3clFbS" id="1F3tG2ragCG" role="9aQI4">
+            <node concept="3cpWs6" id="1F3tG2ragCV" role="3cqZAp">
+              <node concept="3y3z36" id="1F3tG2rahSb" role="3cqZAk">
+                <node concept="2YIFZM" id="1F3tG2railZ" role="3uHU7w">
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="2YIFZM" id="1F3tG2raiPE" role="37wK5m">
+                    <ref role="37wK5l" node="4hjKlK6MTVW" resolve="eval" />
+                    <ref role="1Pybhc" node="3JEE7152ea2" resolve="EvalHelper" />
+                    <node concept="2OqwBi" id="1F3tG2raj5z" role="37wK5m">
+                      <node concept="oxGPV" id="1F3tG2raiV3" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1F3tG2rajmM" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v8ga:qPnaaOdkOq" resolve="right" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="1F3tG2ragJv" role="3uHU7B">
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="2YIFZM" id="1F3tG2ragSo" role="37wK5m">
+                    <ref role="37wK5l" node="4hjKlK6MTVW" resolve="eval" />
+                    <ref role="1Pybhc" node="3JEE7152ea2" resolve="EvalHelper" />
+                    <node concept="2OqwBi" id="1F3tG2rah7c" role="37wK5m">
+                      <node concept="oxGPV" id="1F3tG2ragXa" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1F3tG2rahn7" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v8ga:qPnaaOdkOo" resolve="left" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="1F3tG2rakia" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="v8ga:1F3tG2ra4oH" resolve="LessEqualExpression" />
+      <node concept="3dA_Gj" id="1F3tG2raljs" role="3vQZUl">
+        <node concept="9aQIb" id="1F3tG2ralju" role="3vcmbn">
+          <node concept="3clFbS" id="1F3tG2raljw" role="9aQI4">
+            <node concept="3cpWs6" id="1F3tG2raljJ" role="3cqZAp">
+              <node concept="2dkUwp" id="1F3tG2ralvI" role="3cqZAk">
+                <node concept="2YIFZM" id="1F3tG2raljQ" role="3uHU7B">
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="2YIFZM" id="1F3tG2raljR" role="37wK5m">
+                    <ref role="37wK5l" node="4hjKlK6MTVW" resolve="eval" />
+                    <ref role="1Pybhc" node="3JEE7152ea2" resolve="EvalHelper" />
+                    <node concept="2OqwBi" id="1F3tG2raljS" role="37wK5m">
+                      <node concept="oxGPV" id="1F3tG2raljT" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1F3tG2raljU" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v8ga:qPnaaOdkOo" resolve="left" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="1F3tG2raljL" role="3uHU7w">
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="2YIFZM" id="1F3tG2raljM" role="37wK5m">
+                    <ref role="37wK5l" node="4hjKlK6MTVW" resolve="eval" />
+                    <ref role="1Pybhc" node="3JEE7152ea2" resolve="EvalHelper" />
+                    <node concept="2OqwBi" id="1F3tG2raljN" role="37wK5m">
+                      <node concept="oxGPV" id="1F3tG2raljO" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1F3tG2raljP" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v8ga:qPnaaOdkOq" resolve="right" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="1F3tG2ralTm" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="v8ga:1F3tG2ra4oO" resolve="GreaterEqualExpression" />
+      <node concept="3dA_Gj" id="1F3tG2rancb" role="3vQZUl">
+        <node concept="9aQIb" id="1F3tG2rancd" role="3vcmbn">
+          <node concept="3clFbS" id="1F3tG2rancf" role="9aQI4">
+            <node concept="3cpWs6" id="1F3tG2rancu" role="3cqZAp">
+              <node concept="2d3UOw" id="1F3tG2ranpa" role="3cqZAk">
+                <node concept="2YIFZM" id="1F3tG2ranc_" role="3uHU7B">
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="2YIFZM" id="1F3tG2rancA" role="37wK5m">
+                    <ref role="37wK5l" node="4hjKlK6MTVW" resolve="eval" />
+                    <ref role="1Pybhc" node="3JEE7152ea2" resolve="EvalHelper" />
+                    <node concept="2OqwBi" id="1F3tG2rancB" role="37wK5m">
+                      <node concept="oxGPV" id="1F3tG2rancC" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1F3tG2rancD" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v8ga:qPnaaOdkOo" resolve="left" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="1F3tG2rancw" role="3uHU7w">
+                  <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String)" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <node concept="2YIFZM" id="1F3tG2rancx" role="37wK5m">
+                    <ref role="37wK5l" node="4hjKlK6MTVW" resolve="eval" />
+                    <ref role="1Pybhc" node="3JEE7152ea2" resolve="EvalHelper" />
+                    <node concept="2OqwBi" id="1F3tG2rancy" role="37wK5m">
+                      <node concept="oxGPV" id="1F3tG2rancz" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1F3tG2ranc$" role="2OqNvi">
+                        <ref role="3Tt5mk" to="v8ga:qPnaaOdkOq" resolve="right" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="1F3tG2ranck" role="3cqZAp" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="lHU7p" id="1F3tG2ra694" role="qq9xR" />
     <node concept="qq9P1" id="1prl$Q8IqkO" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="v8ga:1prl$Q8Gtbp" resolve="ParenthesisExpression" />
