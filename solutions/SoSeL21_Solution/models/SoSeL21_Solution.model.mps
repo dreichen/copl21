@@ -7,7 +7,13 @@
   <imports />
   <registry>
     <language id="7e642a5f-6d9b-49f5-8159-56089ac1a1e9" name="SoSeL21">
+      <concept id="1928515635053610525" name="SoSeL21.structure.BooleanExpression" flags="ng" index="21UN3t" />
+      <concept id="1928515635053610538" name="SoSeL21.structure.UnequalExpression" flags="ng" index="21UN3E" />
       <concept id="1928515635053610541" name="SoSeL21.structure.LessEqualExpression" flags="ng" index="21UN3H" />
+      <concept id="1928515635053974248" name="SoSeL21.structure.IfStatement" flags="ng" index="21VEgC">
+        <child id="1928515635053974285" name="condition" index="21VEnd" />
+        <child id="1928515635053974288" name="ifBody" index="21VEng" />
+      </concept>
       <concept id="4161103506187349067" name="SoSeL21.structure.Boolean" flags="ng" index="2ukHBs" />
       <concept id="4161103506187198325" name="SoSeL21.structure.SoSeWorksheet" flags="ng" index="2ulaFy">
         <child id="4161103506187356639" name="contents" index="2ukjL8" />
@@ -421,6 +427,19 @@
       </node>
       <node concept="1ImbOi" id="1F3tG2ra5ix" role="2Mw16S">
         <property role="1ImbOn" value="1" />
+      </node>
+    </node>
+    <node concept="21VEgC" id="1F3tG2rchWV" role="2ukjL8">
+      <node concept="21UN3E" id="1F3tG2rci4c" role="21VEnd">
+        <node concept="1ImbOi" id="1F3tG2rchZq" role="2Mw16U">
+          <property role="1ImbOn" value="1" />
+        </node>
+        <node concept="1ImbOi" id="1F3tG2rci4f" role="2Mw16S">
+          <property role="1ImbOn" value="2" />
+        </node>
+      </node>
+      <node concept="21VEgC" id="1F3tG2rcFOJ" role="21VEng">
+        <node concept="21UN3t" id="1F3tG2rcFOK" role="21VEnd" />
       </node>
     </node>
   </node>

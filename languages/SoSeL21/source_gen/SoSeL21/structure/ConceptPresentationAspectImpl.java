@@ -20,6 +20,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IContent;
   private ConceptPresentation props_IDeclaration;
   private ConceptPresentation props_IExpression;
+  private ConceptPresentation props_IfStatement;
   private ConceptPresentation props_Int;
   private ConceptPresentation props_IntRef;
   private ConceptPresentation props_IntVal;
@@ -30,6 +31,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ParenthesisExpression;
   private ConceptPresentation props_Reference;
   private ConceptPresentation props_SoSeWorksheet;
+  private ConceptPresentation props_Statement;
   private ConceptPresentation props_Substraction;
   private ConceptPresentation props_UnequalExpression;
 
@@ -110,6 +112,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IExpression = cpb.create();
         }
         return props_IExpression;
+      case LanguageConceptSwitch.IfStatement:
+        if (props_IfStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_IfStatement = cpb.create();
+        }
+        return props_IfStatement;
       case LanguageConceptSwitch.Int:
         if (props_Int == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -179,6 +188,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SoSeWorksheet = cpb.create();
         }
         return props_SoSeWorksheet;
+      case LanguageConceptSwitch.Statement:
+        if (props_Statement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Statement = cpb.create();
+        }
+        return props_Statement;
       case LanguageConceptSwitch.Substraction:
         if (props_Substraction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

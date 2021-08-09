@@ -24,6 +24,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIContent = createDescriptorForIContent();
   /*package*/ final ConceptDescriptor myConceptIDeclaration = createDescriptorForIDeclaration();
   /*package*/ final ConceptDescriptor myConceptIExpression = createDescriptorForIExpression();
+  /*package*/ final ConceptDescriptor myConceptIfStatement = createDescriptorForIfStatement();
   /*package*/ final ConceptDescriptor myConceptInt = createDescriptorForInt();
   /*package*/ final ConceptDescriptor myConceptIntRef = createDescriptorForIntRef();
   /*package*/ final ConceptDescriptor myConceptIntVal = createDescriptorForIntVal();
@@ -34,6 +35,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptParenthesisExpression = createDescriptorForParenthesisExpression();
   /*package*/ final ConceptDescriptor myConceptReference = createDescriptorForReference();
   /*package*/ final ConceptDescriptor myConceptSoSeWorksheet = createDescriptorForSoSeWorksheet();
+  /*package*/ final ConceptDescriptor myConceptStatement = createDescriptorForStatement();
   /*package*/ final ConceptDescriptor myConceptSubstraction = createDescriptorForSubstraction();
   /*package*/ final ConceptDescriptor myConceptUnequalExpression = createDescriptorForUnequalExpression();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -50,7 +52,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAddition, myConceptArithmeticExpression, myConceptAssignment, myConceptBoolean, myConceptBooleanExpression, myConceptDivision, myConceptGreaterEqualExpression, myConceptGreaterExpression, myConceptIContent, myConceptIDeclaration, myConceptIExpression, myConceptInt, myConceptIntRef, myConceptIntVal, myConceptInteger, myConceptLessEqualExpression, myConceptLessExpression, myConceptMultiplication, myConceptParenthesisExpression, myConceptReference, myConceptSoSeWorksheet, myConceptSubstraction, myConceptUnequalExpression);
+    return Arrays.asList(myConceptAddition, myConceptArithmeticExpression, myConceptAssignment, myConceptBoolean, myConceptBooleanExpression, myConceptDivision, myConceptGreaterEqualExpression, myConceptGreaterExpression, myConceptIContent, myConceptIDeclaration, myConceptIExpression, myConceptIfStatement, myConceptInt, myConceptIntRef, myConceptIntVal, myConceptInteger, myConceptLessEqualExpression, myConceptLessExpression, myConceptMultiplication, myConceptParenthesisExpression, myConceptReference, myConceptSoSeWorksheet, myConceptStatement, myConceptSubstraction, myConceptUnequalExpression);
   }
 
   @Override
@@ -79,6 +81,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptIDeclaration;
       case LanguageConceptSwitch.IExpression:
         return myConceptIExpression;
+      case LanguageConceptSwitch.IfStatement:
+        return myConceptIfStatement;
       case LanguageConceptSwitch.Int:
         return myConceptInt;
       case LanguageConceptSwitch.IntRef:
@@ -99,6 +103,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptReference;
       case LanguageConceptSwitch.SoSeWorksheet:
         return myConceptSoSeWorksheet;
+      case LanguageConceptSwitch.Statement:
+        return myConceptStatement;
       case LanguageConceptSwitch.Substraction:
         return myConceptSubstraction;
       case LanguageConceptSwitch.UnequalExpression:
@@ -209,6 +215,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("right", 0x6b55ca2b4354d1aL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL).optional(true).ordered(true).multiple(false).origin("483394388890045722").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForIfStatement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoSeL21", "IfStatement", 0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b2dd2e8L);
+    b.class_(false, false, false);
+    b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b2dd2e6L);
+    b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/1928515635053974248");
+    b.version(2);
+    b.aggregate("condition", 0x1ac376c09b2dd30dL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b28461dL).optional(false).ordered(true).multiple(false).origin("1928515635053974285").done();
+    b.aggregate("ifBody", 0x1ac376c09b2dd310L).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c8da40L).optional(true).ordered(true).multiple(false).origin("1928515635053974288").done();
+    b.aggregate("elseBody", 0x1ac376c09b2dd30fL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c8da40L).optional(true).ordered(true).multiple(false).origin("1928515635053974287").done();
+    b.alias("if");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForInt() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoSeL21", "Int", 0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x6b55ca2b4372349L);
     b.interface_();
@@ -299,6 +317,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("contents", 0x39bf3597a7ee09dfL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c8da40L).optional(true).ordered(true).multiple(true).origin("4161103506187356639").done();
     b.alias("SoSeWorksheet");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForStatement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoSeL21", "Statement", 0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b2dd2e6L);
+    b.interface_();
+    b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c8da40L);
+    b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/1928515635053974246");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSubstraction() {

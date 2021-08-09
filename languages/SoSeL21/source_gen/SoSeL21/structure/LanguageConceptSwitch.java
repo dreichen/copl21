@@ -20,18 +20,20 @@ public final class LanguageConceptSwitch {
   public static final int IContent = 8;
   public static final int IDeclaration = 9;
   public static final int IExpression = 10;
-  public static final int Int = 11;
-  public static final int IntRef = 12;
-  public static final int IntVal = 13;
-  public static final int Integer = 14;
-  public static final int LessEqualExpression = 15;
-  public static final int LessExpression = 16;
-  public static final int Multiplication = 17;
-  public static final int ParenthesisExpression = 18;
-  public static final int Reference = 19;
-  public static final int SoSeWorksheet = 20;
-  public static final int Substraction = 21;
-  public static final int UnequalExpression = 22;
+  public static final int IfStatement = 11;
+  public static final int Int = 12;
+  public static final int IntRef = 13;
+  public static final int IntVal = 14;
+  public static final int Integer = 15;
+  public static final int LessEqualExpression = 16;
+  public static final int LessExpression = 17;
+  public static final int Multiplication = 18;
+  public static final int ParenthesisExpression = 19;
+  public static final int Reference = 20;
+  public static final int SoSeWorksheet = 21;
+  public static final int Statement = 22;
+  public static final int Substraction = 23;
+  public static final int UnequalExpression = 24;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L);
@@ -46,6 +48,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x231e7e13c1c8da40L, IContent);
     builder.put(0x39bf3597a7edeacbL, IDeclaration);
     builder.put(0x231e7e13c1c9328fL, IExpression);
+    builder.put(0x1ac376c09b2dd2e8L, IfStatement);
     builder.put(0x6b55ca2b4372349L, Int);
     builder.put(0x107296237e2a2b36L, IntRef);
     builder.put(0x107296237e2a2b31L, IntVal);
@@ -56,6 +59,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x165b564d88b1d2d9L, ParenthesisExpression);
     builder.put(0x1b9b1aa24caa6fc6L, Reference);
     builder.put(0x39bf3597a7eb9f75L, SoSeWorksheet);
+    builder.put(0x1ac376c09b2dd2e6L, Statement);
     builder.put(0x231e7e13c1c93292L, Substraction);
     builder.put(0x1ac376c09b28462aL, UnequalExpression);
     myIndex = builder.seal();
