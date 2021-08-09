@@ -148,7 +148,13 @@
           <property role="3$6WeP" value="0" />
         </node>
       </node>
-      <node concept="3F0ifn" id="3AZdpuBVuLT" role="3EZMnx">
+      <node concept="3F0ifn" id="1F3tG2rasBc" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F0A7n" id="1F3tG2rasBo" role="3EZMnx">
+        <ref role="1NtTu8" to="v8ga:3AZdpuBVuLe" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="1F3tG2rbsN0" role="3EZMnx">
         <property role="3F0ifm" value=";" />
       </node>
     </node>
