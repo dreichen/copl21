@@ -7,7 +7,12 @@
   <imports />
   <registry>
     <language id="7e642a5f-6d9b-49f5-8159-56089ac1a1e9" name="SoSeL21">
-      <concept id="1928515635053610541" name="SoSeL21.structure.LessEqualExpression" flags="ng" index="21UN3H" />
+      <concept id="1928515635055339177" name="SoSeL21.structure.BoolVal" flags="ng" index="21wt1D">
+        <property id="1928515635055339180" name="value" index="21wt1G" />
+      </concept>
+      <concept id="1928515635055506378" name="SoSeL21.structure.OrExpression" flags="ng" index="21x$ka" />
+      <concept id="1928515635055482993" name="SoSeL21.structure.AndExpression" flags="ng" index="21xUUL" />
+      <concept id="1928515635053610528" name="SoSeL21.structure.LessExpression" flags="ng" index="21UN3w" />
       <concept id="4161103506187349067" name="SoSeL21.structure.Boolean" flags="ng" index="2ukHBs" />
       <concept id="4161103506187198325" name="SoSeL21.structure.SoSeWorksheet" flags="ng" index="2ulaFy">
         <child id="4161103506187356639" name="contents" index="2ukjL8" />
@@ -415,12 +420,38 @@
         <property role="1ImbOn" value="2" />
       </node>
     </node>
-    <node concept="21UN3H" id="1F3tG2ra5gb" role="2ukjL8">
-      <node concept="1ImbOi" id="1F3tG2ra5iv" role="2Mw16U">
-        <property role="1ImbOn" value="2" />
-      </node>
-      <node concept="1ImbOi" id="1F3tG2ra5ix" role="2Mw16S">
+    <node concept="21UN3w" id="1F3tG2rgEd8" role="2ukjL8">
+      <node concept="1ImbOi" id="1F3tG2rgEfs" role="2Mw16U">
         <property role="1ImbOn" value="1" />
+      </node>
+      <node concept="1ImbOi" id="1F3tG2rgEfu" role="2Mw16S">
+        <property role="1ImbOn" value="3" />
+      </node>
+    </node>
+    <node concept="21wt1D" id="1F3tG2rh6eF" role="2ukjL8">
+      <property role="21wt1G" value="true" />
+    </node>
+    <node concept="21wt1D" id="1F3tG2rhdmE" role="2ukjL8" />
+    <node concept="3yPOM6" id="1F3tG2rhdtf" role="2ukjL8">
+      <node concept="21wt1D" id="1F3tG2rhdvC" role="2Mw16U">
+        <property role="21wt1G" value="true" />
+      </node>
+      <node concept="21wt1D" id="1F3tG2rhdvE" role="2Mw16S">
+        <property role="21wt1G" value="true" />
+      </node>
+    </node>
+    <node concept="21xUUL" id="1F3tG2rhqiN" role="2ukjL8">
+      <node concept="21wt1D" id="1F3tG2rhqlf" role="2Mw16U">
+        <property role="21wt1G" value="true" />
+      </node>
+      <node concept="21wt1D" id="1F3tG2rhqlh" role="2Mw16S">
+        <property role="21wt1G" value="true" />
+      </node>
+    </node>
+    <node concept="21x$ka" id="1F3tG2rhqzi" role="2ukjL8">
+      <node concept="21wt1D" id="1F3tG2rhq_L" role="2Mw16U" />
+      <node concept="21wt1D" id="1F3tG2rhqEL" role="2Mw16S">
+        <property role="21wt1G" value="true" />
       </node>
     </node>
   </node>

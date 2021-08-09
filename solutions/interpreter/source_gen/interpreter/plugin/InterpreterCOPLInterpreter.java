@@ -271,7 +271,6 @@ public class InterpreterCOPLInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           return Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.left$XEZB))) >= Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.right$XFtD)));
-
         } catch (StopAndReturnException stop) {
           return stop.value();
         } catch (InterpreterEscapeException ex) {
@@ -287,6 +286,75 @@ public class InterpreterCOPLInterpreter extends InterpreterBase {
       @Override
       public String toString() {
         return "GreaterEqualExpression";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
+      }
+    });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.AndExpression$b8, "r:7adc6d04-8e3f-4e39-821a-acd3f37b96c5(interpreter.plugin)/1928515635055488226", true) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          if (Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.left$XEZB))) > 0) {
+            if (Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.right$XFtD))) > 0) {
+              return 1;
+            }
+          }
+          return 0;
+        } catch (StopAndReturnException stop) {
+          return stop.value();
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("&&()", node, ex, trace);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("AndExpression");
+      }
+
+      @Override
+      public String toString() {
+        return "AndExpression";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
+      }
+    });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.OrExpression$nO, "r:7adc6d04-8e3f-4e39-821a-acd3f37b96c5(interpreter.plugin)/1928515635055511878", true) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          if (Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.left$XEZB))) > 0) {
+            return 1;
+          }
+          if (Integer.valueOf(EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.right$XFtD))) > 0) {
+            return 1;
+          }
+          return 0;
+        } catch (StopAndReturnException stop) {
+          return stop.value();
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("||()", node, ex, trace);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("OrExpression");
+      }
+
+      @Override
+      public String toString() {
+        return "OrExpression";
       }
 
       @Override
@@ -381,6 +449,38 @@ public class InterpreterCOPLInterpreter extends InterpreterBase {
         return true;
       }
     });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.BoolVal$rP, "r:7adc6d04-8e3f-4e39-821a-acd3f37b96c5(interpreter.plugin)/1928515635055460309", true) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          if (SPropertyOperations.getBoolean(node, PROPS.value$$s_A)) {
+            return 1;
+          }
+          return 0;
+        } catch (StopAndReturnException stop) {
+          return stop.value();
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("BoolVal()", node, ex, trace);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("BoolVal");
+      }
+
+      @Override
+      public String toString() {
+        return "BoolVal";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
+      }
+    });
   }
 
 
@@ -409,13 +509,17 @@ public class InterpreterCOPLInterpreter extends InterpreterBase {
     /*package*/ static final SConcept UnequalExpression$Na = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b28462aL, "SoSeL21.structure.UnequalExpression");
     /*package*/ static final SConcept LessEqualExpression$YM = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b28462dL, "SoSeL21.structure.LessEqualExpression");
     /*package*/ static final SConcept GreaterEqualExpression$2b = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b284634L, "SoSeL21.structure.GreaterEqualExpression");
+    /*package*/ static final SConcept AndExpression$b8 = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b44d871L, "SoSeL21.structure.AndExpression");
+    /*package*/ static final SConcept OrExpression$nO = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b4533caL, "SoSeL21.structure.OrExpression");
     /*package*/ static final SConcept ParenthesisExpression$$t = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x165b564d88b1d2d9L, "SoSeL21.structure.ParenthesisExpression");
     /*package*/ static final SConcept IntRef$ty = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b36L, "SoSeL21.structure.IntRef");
     /*package*/ static final SConcept IntVal$gW = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b31L, "SoSeL21.structure.IntVal");
+    /*package*/ static final SConcept BoolVal$rP = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b42a6a9L, "SoSeL21.structure.BoolVal");
   }
 
   private static final class PROPS {
     /*package*/ static final SProperty value$D6Nh = MetaAdapterFactory.getProperty(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1b9b1aa24ca9280bL, 0x1b9b1aa24ca9280eL, "value");
     /*package*/ static final SProperty value$QidL = MetaAdapterFactory.getProperty(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x107296237e2a2b31L, 0x107296237e2a2b34L, "value");
+    /*package*/ static final SProperty value$$s_A = MetaAdapterFactory.getProperty(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b42a6a9L, 0x1ac376c09b42a6acL, "value");
   }
 }
