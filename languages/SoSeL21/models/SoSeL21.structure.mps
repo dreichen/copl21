@@ -446,5 +446,45 @@
       <ref role="20lvS9" node="2cuvxf1MdD0" resolve="IContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2LgooMDrHqw">
+    <property role="EcuMT" value="3193159392571610784" />
+    <property role="3GE5qa" value="controlflow" />
+    <property role="TrG5h" value="FunctionDeclaration" />
+    <property role="34LRSv" value="fun" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2LgooMDrHqx" role="PzmwI">
+      <ref role="PrY4T" node="1F3tG2rbtbA" resolve="Statement" />
+    </node>
+    <node concept="PrWs8" id="2LgooMDrHqA" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2LgooMDrHqE" role="1TKVEi">
+      <property role="IQ2ns" value="3193159392571610794" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="params" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2LgooMDrHqG" resolve="FunctionParamDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="2LgooMDrHqJ" role="1TKVEi">
+      <property role="IQ2ns" value="3193159392571610799" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="returnType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyj" id="2LgooMDrHqM" role="1TKVEi">
+      <property role="IQ2ns" value="3193159392571610802" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <ref role="20lvS9" node="2cuvxf1MdD0" resolve="IContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2LgooMDrHqG">
+    <property role="EcuMT" value="3193159392571610796" />
+    <property role="TrG5h" value="FunctionParamDeclaration" />
+    <node concept="PrWs8" id="2LgooMDrHqH" role="PrDN$">
+      <ref role="PrY4T" node="3AZdpuBVuFb" resolve="IDeclaration" />
+    </node>
+  </node>
 </model>
 
