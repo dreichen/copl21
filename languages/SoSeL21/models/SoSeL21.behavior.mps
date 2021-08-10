@@ -96,6 +96,58 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5Iic23oyJqE" role="13h7CS">
+      <property role="TrG5h" value="integers" />
+      <node concept="3Tm1VV" id="5Iic23oyJqF" role="1B3o_S" />
+      <node concept="A3Dl8" id="5Iic23oyJsr" role="3clF45">
+        <node concept="3Tqbb2" id="5Iic23oyJsC" role="A3Ik2">
+          <ref role="ehGHo" to="v8ga:1Ir6E9cEiwb" resolve="Integer" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5Iic23oyJqH" role="3clF47">
+        <node concept="3clFbF" id="5Iic23oyJt4" role="3cqZAp">
+          <node concept="2OqwBi" id="5Iic23oyLcV" role="3clFbG">
+            <node concept="2OqwBi" id="5Iic23oyJBF" role="2Oq$k0">
+              <node concept="13iPFW" id="5Iic23oyJt3" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5Iic23oyJMB" role="2OqNvi">
+                <ref role="3TtcxE" to="v8ga:3AZdpuBVwBv" resolve="contents" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="5Iic23oyNnH" role="2OqNvi">
+              <node concept="chp4Y" id="5Iic23oyNoT" role="v3oSu">
+                <ref role="cht4Q" to="v8ga:1Ir6E9cEiwb" resolve="Integer" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5Iic23oyNqu" role="13h7CS">
+      <property role="TrG5h" value="booleans" />
+      <node concept="3Tm1VV" id="5Iic23oyNqv" role="1B3o_S" />
+      <node concept="A3Dl8" id="5Iic23oyNtQ" role="3clF45">
+        <node concept="3Tqbb2" id="5Iic23oyNu3" role="A3Ik2">
+          <ref role="ehGHo" to="v8ga:3AZdpuBVuLb" resolve="Boolean" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5Iic23oyNqx" role="3clF47">
+        <node concept="3clFbF" id="5Iic23oyNuB" role="3cqZAp">
+          <node concept="2OqwBi" id="5Iic23oyPed" role="3clFbG">
+            <node concept="2OqwBi" id="5Iic23oyNDm" role="2Oq$k0">
+              <node concept="13iPFW" id="5Iic23oyNuA" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5Iic23oyNNT" role="2OqNvi">
+                <ref role="3TtcxE" to="v8ga:3AZdpuBVwBv" resolve="contents" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="5Iic23oyQTe" role="2OqNvi">
+              <node concept="chp4Y" id="5Iic23oyQUq" role="v3oSu">
+                <ref role="cht4Q" to="v8ga:3AZdpuBVuLb" resolve="Boolean" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="5VXPRdgECQe" role="13h7CW">
       <node concept="3clFbS" id="5VXPRdgECQf" role="2VODD2" />
     </node>
