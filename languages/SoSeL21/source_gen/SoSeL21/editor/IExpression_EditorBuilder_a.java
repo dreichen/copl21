@@ -79,7 +79,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
               // replace with placeholder
               SNode child = SLinkOperations.getTarget(node, LINKS.left$XEZB);
               SAbstractConcept childConcept = SNodeOperations.getConcept(child);
-              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IExpression$CE))) {
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IntExpression$nK))) {
                 SNodeFactoryOperations.setNewChild(node, LINKS.left$XEZB, null);
                 return;
               }
@@ -100,7 +100,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
               // replace the node with a placeholder
               SNode child = SLinkOperations.getTarget(node, LINKS.left$XEZB);
               SAbstractConcept childConcept = SNodeOperations.getConcept(child);
-              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IExpression$CE))) {
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IntExpression$nK))) {
                 return true;
               }
             }
@@ -120,7 +120,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
               // replace with placeholder
               SNode child = SLinkOperations.getTarget(node, LINKS.left$XEZB);
               SAbstractConcept childConcept = SNodeOperations.getConcept(child);
-              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IExpression$CE))) {
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IntExpression$nK))) {
                 SNodeFactoryOperations.setNewChild(node, LINKS.left$XEZB, null);
                 return;
               }
@@ -141,7 +141,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
               // replace the node with a placeholder
               SNode child = SLinkOperations.getTarget(node, LINKS.left$XEZB);
               SAbstractConcept childConcept = SNodeOperations.getConcept(child);
-              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IExpression$CE))) {
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IntExpression$nK))) {
                 return true;
               }
             }
@@ -348,7 +348,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
               // replace with placeholder
               SNode child = SLinkOperations.getTarget(node, LINKS.right$XFtD);
               SAbstractConcept childConcept = SNodeOperations.getConcept(child);
-              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IExpression$CE))) {
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IntExpression$nK))) {
                 SNodeFactoryOperations.setNewChild(node, LINKS.right$XFtD, null);
                 return;
               }
@@ -369,7 +369,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
               // replace the node with a placeholder
               SNode child = SLinkOperations.getTarget(node, LINKS.right$XFtD);
               SAbstractConcept childConcept = SNodeOperations.getConcept(child);
-              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IExpression$CE))) {
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IntExpression$nK))) {
                 return true;
               }
             }
@@ -389,7 +389,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
               // replace with placeholder
               SNode child = SLinkOperations.getTarget(node, LINKS.right$XFtD);
               SAbstractConcept childConcept = SNodeOperations.getConcept(child);
-              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IExpression$CE))) {
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IntExpression$nK))) {
                 SNodeFactoryOperations.setNewChild(node, LINKS.right$XFtD, null);
                 return;
               }
@@ -410,7 +410,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
               // replace the node with a placeholder
               SNode child = SLinkOperations.getTarget(node, LINKS.right$XFtD);
               SAbstractConcept childConcept = SNodeOperations.getConcept(child);
-              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IExpression$CE))) {
+              if (!(GrammarCellsUtil.isExactly(childConcept, CONCEPTS.IntExpression$nK))) {
                 return true;
               }
             }
@@ -494,6 +494,6 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SInterfaceConcept IExpression$CE = MetaAdapterFactory.getInterfaceConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL, "SoSeL21.structure.IExpression");
+    /*package*/ static final SInterfaceConcept IntExpression$nK = MetaAdapterFactory.getInterfaceConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x2c50618ca9536155L, "SoSeL21.structure.IntExpression");
   }
 }
