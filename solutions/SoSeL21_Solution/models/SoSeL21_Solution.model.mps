@@ -22,8 +22,13 @@
         <child id="3193159392570243703" name="condition" index="252pJV" />
       </concept>
       <concept id="3193159392570337193" name="SoSeL21.structure.ForStatement" flags="ng" index="252Ko_" />
+      <concept id="3193159392571709902" name="SoSeL21.structure.FunctionParam" flags="ng" index="2583x2">
+        <child id="3193159392571928055" name="type" index="258WLV" />
+      </concept>
+      <concept id="3193159392571814244" name="SoSeL21.structure.BoolType" flags="ng" index="258p3C" />
       <concept id="3193159392571610784" name="SoSeL21.structure.FunctionDeclaration" flags="ng" index="25fFsG">
-        <child id="3193159392571610799" name="returnType" index="25fFsz" />
+        <child id="3193159392571814245" name="returnType" index="258p3D" />
+        <child id="3193159392571610794" name="params" index="25fFsA" />
       </concept>
       <concept id="4161103506187349067" name="SoSeL21.structure.Boolean" flags="ng" index="2ukHBs" />
       <concept id="4161103506187198325" name="SoSeL21.structure.SoSeWorksheet" flags="ng" index="2ulaFy">
@@ -53,7 +58,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi" />
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -489,9 +493,13 @@
         <node concept="252Ko_" id="2LgooMDndQb" role="21VEnf" />
       </node>
     </node>
-    <node concept="25fFsG" id="2LgooMDs5$q" role="2ukjL8">
+    <node concept="25fFsG" id="2LgooMDsUP3" role="2ukjL8">
       <property role="TrG5h" value="as" />
-      <node concept="2VYdi" id="2LgooMDs5Bc" role="25fFsz" />
+      <node concept="258p3C" id="2LgooMDtjdI" role="258p3D" />
+      <node concept="2583x2" id="2LgooMDu2d$" role="25fFsA">
+        <property role="TrG5h" value="bool" />
+        <node concept="258p3C" id="2LgooMDu2dC" role="258WLV" />
+      </node>
     </node>
   </node>
   <node concept="2ulaFy" id="5VXPRdgFfBp">

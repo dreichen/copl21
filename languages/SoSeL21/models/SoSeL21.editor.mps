@@ -454,9 +454,8 @@
         <node concept="3F0ifn" id="2LgooMDrIpy" role="3EZMnx">
           <property role="3F0ifm" value="(" />
         </node>
-        <node concept="3F2HdR" id="2LgooMDrIpM" role="3EZMnx">
+        <node concept="3F1sOY" id="2LgooMDs6OG" role="3EZMnx">
           <ref role="1NtTu8" to="v8ga:2LgooMDrHqE" resolve="params" />
-          <node concept="2iRfu4" id="2LgooMDrIpO" role="2czzBx" />
         </node>
         <node concept="3F0ifn" id="2LgooMDrIq1" role="3EZMnx">
           <property role="3F0ifm" value=")" />
@@ -464,8 +463,8 @@
         <node concept="3F0ifn" id="2LgooMDrIqh" role="3EZMnx">
           <property role="3F0ifm" value=":" />
         </node>
-        <node concept="3F1sOY" id="2LgooMDrIqz" role="3EZMnx">
-          <ref role="1NtTu8" to="v8ga:2LgooMDrHqJ" resolve="returnType" />
+        <node concept="3F1sOY" id="2LgooMDsw8S" role="3EZMnx">
+          <ref role="1NtTu8" to="v8ga:2LgooMDsv5_" resolve="returnType" />
         </node>
         <node concept="3F0ifn" id="2LgooMDrIqR" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -484,6 +483,30 @@
         <property role="3F0ifm" value="}" />
       </node>
       <node concept="2iRkQZ" id="2LgooMDrIp7" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2LgooMDsVVe">
+    <ref role="1XX52x" to="v8ga:2LgooMDsv5z" resolve="IntType" />
+    <node concept="PMmxH" id="2LgooMDsVVg" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2LgooMDtjdS">
+    <ref role="1XX52x" to="v8ga:2LgooMDsv5$" resolve="BoolType" />
+    <node concept="PMmxH" id="2LgooMDtjdU" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2LgooMDtEym">
+    <ref role="1XX52x" to="v8ga:2LgooMDs5Be" resolve="FunctionParam" />
+    <node concept="3EZMnI" id="2LgooMDtEyo" role="2wV5jI">
+      <node concept="3F1sOY" id="2LgooMDtEyv" role="3EZMnx">
+        <ref role="1NtTu8" to="v8ga:2LgooMDsURR" resolve="type" />
+      </node>
+      <node concept="3F0A7n" id="2LgooMDtEy_" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="2LgooMDtEyr" role="2iSdaV" />
     </node>
   </node>
 </model>
