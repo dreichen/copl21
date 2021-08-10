@@ -28,6 +28,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIExpression = createDescriptorForIExpression();
   /*package*/ final ConceptDescriptor myConceptIfStatement = createDescriptorForIfStatement();
   /*package*/ final ConceptDescriptor myConceptInt = createDescriptorForInt();
+  /*package*/ final ConceptDescriptor myConceptIntExpression = createDescriptorForIntExpression();
   /*package*/ final ConceptDescriptor myConceptIntRef = createDescriptorForIntRef();
   /*package*/ final ConceptDescriptor myConceptIntVal = createDescriptorForIntVal();
   /*package*/ final ConceptDescriptor myConceptInteger = createDescriptorForInteger();
@@ -55,7 +56,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAddition, myConceptAndExpression, myConceptArithmeticExpression, myConceptAssignment, myConceptBool, myConceptBoolVal, myConceptBoolean, myConceptDivision, myConceptGreaterEqualExpression, myConceptGreaterExpression, myConceptIContent, myConceptIDeclaration, myConceptIExpression, myConceptIfStatement, myConceptInt, myConceptIntRef, myConceptIntVal, myConceptInteger, myConceptLessEqualExpression, myConceptLessExpression, myConceptMultiplication, myConceptOrExpression, myConceptParenthesisExpression, myConceptReference, myConceptSoSeWorksheet, myConceptStatement, myConceptSubstraction, myConceptUnequalExpression);
+    return Arrays.asList(myConceptAddition, myConceptAndExpression, myConceptArithmeticExpression, myConceptAssignment, myConceptBool, myConceptBoolVal, myConceptBoolean, myConceptDivision, myConceptGreaterEqualExpression, myConceptGreaterExpression, myConceptIContent, myConceptIDeclaration, myConceptIExpression, myConceptIfStatement, myConceptInt, myConceptIntExpression, myConceptIntRef, myConceptIntVal, myConceptInteger, myConceptLessEqualExpression, myConceptLessExpression, myConceptMultiplication, myConceptOrExpression, myConceptParenthesisExpression, myConceptReference, myConceptSoSeWorksheet, myConceptStatement, myConceptSubstraction, myConceptUnequalExpression);
   }
 
   @Override
@@ -92,6 +93,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptIfStatement;
       case LanguageConceptSwitch.Int:
         return myConceptInt;
+      case LanguageConceptSwitch.IntExpression:
+        return myConceptIntExpression;
       case LanguageConceptSwitch.IntRef:
         return myConceptIntRef;
       case LanguageConceptSwitch.IntVal:
@@ -235,11 +238,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForIExpression() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoSeL21", "IExpression", 0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL);
     b.interface_();
-    b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c8da40L);
+    b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x2c50618ca9536155L);
     b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/2530598663949464207");
     b.version(2);
-    b.aggregate("left", 0x6b55ca2b4354d18L).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL).optional(true).ordered(true).multiple(false).origin("483394388890045720").done();
-    b.aggregate("right", 0x6b55ca2b4354d1aL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL).optional(true).ordered(true).multiple(false).origin("483394388890045722").done();
+    b.aggregate("left", 0x6b55ca2b4354d18L).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x2c50618ca9536155L).optional(true).ordered(true).multiple(false).origin("483394388890045720").done();
+    b.aggregate("right", 0x6b55ca2b4354d1aL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x2c50618ca9536155L).optional(true).ordered(true).multiple(false).origin("483394388890045722").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIfStatement() {
@@ -248,7 +251,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1ac376c09b2dd2e6L);
     b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/1928515635053974248");
     b.version(2);
-    b.aggregate("condition", 0x1ac376c09b2dd30dL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL).optional(false).ordered(true).multiple(false).origin("1928515635053974285").done();
+    b.aggregate("condition", 0x1ac376c09b2dd30dL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x2c50618ca9536155L).optional(false).ordered(true).multiple(false).origin("1928515635053974285").done();
     b.aggregate("ifBody", 0x1ac376c09b2dd310L).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c8da40L).optional(true).ordered(true).multiple(false).origin("1928515635053974288").done();
     b.aggregate("elseBody", 0x1ac376c09b2dd30fL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c8da40L).optional(true).ordered(true).multiple(false).origin("1928515635053974287").done();
     b.alias("if");
@@ -257,8 +260,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForInt() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoSeL21", "Int", 0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x6b55ca2b4372349L);
     b.interface_();
-    b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c9328fL);
+    b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x2c50618ca9536155L);
     b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/483394388890166089");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIntExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoSeL21", "IntExpression", 0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x2c50618ca9536155L);
+    b.interface_();
+    b.parent(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c8da40L);
+    b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/3193159392569811285");
     b.version(2);
     return b.create();
   }

@@ -24,6 +24,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IExpression;
   private ConceptPresentation props_IfStatement;
   private ConceptPresentation props_Int;
+  private ConceptPresentation props_IntExpression;
   private ConceptPresentation props_IntRef;
   private ConceptPresentation props_IntVal;
   private ConceptPresentation props_Integer;
@@ -142,6 +143,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Int = cpb.create();
         }
         return props_Int;
+      case LanguageConceptSwitch.IntExpression:
+        if (props_IntExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IntExpression = cpb.create();
+        }
+        return props_IntExpression;
       case LanguageConceptSwitch.IntRef:
         if (props_IntRef == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
