@@ -21,19 +21,28 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 public final class SoSeWorksheet__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x39bf3597a7eb9f75L, "SoSeL21.structure.SoSeWorksheet");
 
   public static final SMethod<Iterable<SNode>> definitions_id5VXPRdgECQo = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("definitions").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5VXPRdgECQo").build();
+  public static final SMethod<Iterable<SNode>> integers_id5Iic23oyJqE = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("integers").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5Iic23oyJqE").build();
+  public static final SMethod<Iterable<SNode>> booleans_id5Iic23oyNqu = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("booleans").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5Iic23oyNqu").build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(definitions_id5VXPRdgECQo);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(definitions_id5VXPRdgECQo, integers_id5Iic23oyJqE, booleans_id5Iic23oyNqu);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static Iterable<SNode> definitions_id5VXPRdgECQo(@NotNull SNode __thisNode__) {
     return SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.contents$sbkK), CONCEPTS.IDeclaration$J5);
+  }
+  /*package*/ static Iterable<SNode> integers_id5Iic23oyJqE(@NotNull SNode __thisNode__) {
+    return SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.contents$sbkK), CONCEPTS.Integer$U7);
+  }
+  /*package*/ static Iterable<SNode> booleans_id5Iic23oyNqu(@NotNull SNode __thisNode__) {
+    return SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.contents$sbkK), CONCEPTS.Boolean$86);
   }
 
   /*package*/ SoSeWorksheet__BehaviorDescriptor() {
@@ -53,6 +62,10 @@ public final class SoSeWorksheet__BehaviorDescriptor extends BaseBHDescriptor {
     switch (methodIndex) {
       case 0:
         return (T) ((Iterable<SNode>) definitions_id5VXPRdgECQo(node));
+      case 1:
+        return (T) ((Iterable<SNode>) integers_id5Iic23oyJqE(node));
+      case 2:
+        return (T) ((Iterable<SNode>) booleans_id5Iic23oyNqu(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -88,5 +101,7 @@ public final class SoSeWorksheet__BehaviorDescriptor extends BaseBHDescriptor {
 
   private static final class CONCEPTS {
     /*package*/ static final SInterfaceConcept IDeclaration$J5 = MetaAdapterFactory.getInterfaceConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x39bf3597a7edeacbL, "SoSeL21.structure.IDeclaration");
+    /*package*/ static final SConcept Integer$U7 = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x1b9b1aa24ca9280bL, "SoSeL21.structure.Integer");
+    /*package*/ static final SConcept Boolean$86 = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x39bf3597a7edec4bL, "SoSeL21.structure.Boolean");
   }
 }
