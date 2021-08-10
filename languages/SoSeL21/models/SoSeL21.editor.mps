@@ -17,6 +17,7 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -437,6 +438,78 @@
         <property role="3F0ifm" value="}" />
       </node>
       <node concept="2iRkQZ" id="2LgooMDmQBh" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2LgooMDrIp2">
+    <property role="3GE5qa" value="controlflow" />
+    <ref role="1XX52x" to="v8ga:2LgooMDrHqw" resolve="FunctionDeclaration" />
+    <node concept="3EZMnI" id="2LgooMDrIp4" role="2wV5jI">
+      <node concept="3EZMnI" id="2LgooMDrIpb" role="3EZMnx">
+        <node concept="VPM3Z" id="2LgooMDrIpd" role="3F10Kt" />
+        <node concept="PMmxH" id="2LgooMDrIpl" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        </node>
+        <node concept="3F0A7n" id="2LgooMDrIpq" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="2LgooMDrIpy" role="3EZMnx">
+          <property role="3F0ifm" value="(" />
+        </node>
+        <node concept="3F2HdR" id="2LgooMDu3oU" role="3EZMnx">
+          <property role="2czwfO" value="," />
+          <ref role="1NtTu8" to="v8ga:2LgooMDrHqE" resolve="params" />
+          <node concept="2iRfu4" id="2LgooMDu3oX" role="2czzBx" />
+        </node>
+        <node concept="3F0ifn" id="2LgooMDrIq1" role="3EZMnx">
+          <property role="3F0ifm" value=")" />
+        </node>
+        <node concept="3F0ifn" id="2LgooMDrIqh" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="3F1sOY" id="2LgooMDsw8S" role="3EZMnx">
+          <ref role="1NtTu8" to="v8ga:2LgooMDsv5_" resolve="returnType" />
+        </node>
+        <node concept="3F0ifn" id="2LgooMDrIqR" role="3EZMnx">
+          <property role="3F0ifm" value="{" />
+        </node>
+        <node concept="2iRfu4" id="2LgooMDrIpg" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="2LgooMDrIrT" role="3EZMnx">
+        <node concept="VPM3Z" id="2LgooMDrIrV" role="3F10Kt" />
+        <node concept="3XFhqQ" id="2LgooMDrIsf" role="3EZMnx" />
+        <node concept="3F1sOY" id="2LgooMDrIsl" role="3EZMnx">
+          <ref role="1NtTu8" to="v8ga:2LgooMDrHqM" resolve="body" />
+        </node>
+        <node concept="2iRfu4" id="2LgooMDrIrY" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="2LgooMDrIsp" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="2iRkQZ" id="2LgooMDrIp7" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2LgooMDsVVe">
+    <ref role="1XX52x" to="v8ga:2LgooMDsv5z" resolve="IntType" />
+    <node concept="PMmxH" id="2LgooMDsVVg" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2LgooMDtjdS">
+    <ref role="1XX52x" to="v8ga:2LgooMDsv5$" resolve="BoolType" />
+    <node concept="PMmxH" id="2LgooMDtjdU" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2LgooMDtEym">
+    <ref role="1XX52x" to="v8ga:2LgooMDs5Be" resolve="FunctionParam" />
+    <node concept="3EZMnI" id="2LgooMDtEyo" role="2wV5jI">
+      <node concept="3F1sOY" id="2LgooMDtEyv" role="3EZMnx">
+        <ref role="1NtTu8" to="v8ga:2LgooMDsURR" resolve="type" />
+      </node>
+      <node concept="3F0A7n" id="2LgooMDtEy_" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="2LgooMDtEyr" role="2iSdaV" />
     </node>
   </node>
 </model>
