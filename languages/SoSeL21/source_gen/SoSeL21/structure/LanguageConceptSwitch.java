@@ -17,27 +17,29 @@ public final class LanguageConceptSwitch {
   public static final int BoolVal = 5;
   public static final int Boolean = 6;
   public static final int Division = 7;
-  public static final int GreaterEqualExpression = 8;
-  public static final int GreaterExpression = 9;
-  public static final int IContent = 10;
-  public static final int IDeclaration = 11;
-  public static final int IExpression = 12;
-  public static final int IfStatement = 13;
-  public static final int Int = 14;
-  public static final int IntExpression = 15;
-  public static final int IntRef = 16;
-  public static final int IntVal = 17;
-  public static final int Integer = 18;
-  public static final int LessEqualExpression = 19;
-  public static final int LessExpression = 20;
-  public static final int Multiplication = 21;
-  public static final int OrExpression = 22;
-  public static final int ParenthesisExpression = 23;
-  public static final int Reference = 24;
-  public static final int SoSeWorksheet = 25;
-  public static final int Statement = 26;
-  public static final int Substraction = 27;
-  public static final int UnequalExpression = 28;
+  public static final int ForStatement = 8;
+  public static final int GreaterEqualExpression = 9;
+  public static final int GreaterExpression = 10;
+  public static final int IContent = 11;
+  public static final int IDeclaration = 12;
+  public static final int IExpression = 13;
+  public static final int IfStatement = 14;
+  public static final int Int = 15;
+  public static final int IntExpression = 16;
+  public static final int IntRef = 17;
+  public static final int IntVal = 18;
+  public static final int Integer = 19;
+  public static final int LessEqualExpression = 20;
+  public static final int LessExpression = 21;
+  public static final int Multiplication = 22;
+  public static final int OrExpression = 23;
+  public static final int ParenthesisExpression = 24;
+  public static final int Reference = 25;
+  public static final int SoSeWorksheet = 26;
+  public static final int Statement = 27;
+  public static final int Substraction = 28;
+  public static final int UnequalExpression = 29;
+  public static final int WhileStatement = 30;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L);
@@ -49,6 +51,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x1ac376c09b42a6a9L, BoolVal);
     builder.put(0x39bf3597a7edec4bL, Boolean);
     builder.put(0x231e7e13c1ca862eL, Division);
+    builder.put(0x2c50618ca95b67a9L, ForStatement);
     builder.put(0x1ac376c09b284634L, GreaterEqualExpression);
     builder.put(0x1ac376c09b284623L, GreaterExpression);
     builder.put(0x231e7e13c1c8da40L, IContent);
@@ -70,6 +73,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x1ac376c09b2dd2e6L, Statement);
     builder.put(0x231e7e13c1c93292L, Substraction);
     builder.put(0x1ac376c09b28462aL, UnequalExpression);
+    builder.put(0x2c50618ca959fa74L, WhileStatement);
     myIndex = builder.seal();
   }
 

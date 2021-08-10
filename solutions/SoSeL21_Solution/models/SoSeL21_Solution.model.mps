@@ -15,7 +15,13 @@
       <concept id="1928515635053610528" name="SoSeL21.structure.LessExpression" flags="ng" index="21UN3w" />
       <concept id="1928515635053974248" name="SoSeL21.structure.IfStatement" flags="ng" index="21VEgC">
         <child id="1928515635053974285" name="condition" index="21VEnd" />
+        <child id="1928515635053974287" name="elseBody" index="21VEnf" />
       </concept>
+      <concept id="3193159392570243700" name="SoSeL21.structure.WhileStatement" flags="ng" index="252pJS">
+        <child id="3193159392570243705" name="body" index="252pJP" />
+        <child id="3193159392570243703" name="condition" index="252pJV" />
+      </concept>
+      <concept id="3193159392570337193" name="SoSeL21.structure.ForStatement" flags="ng" index="252Ko_" />
       <concept id="4161103506187349067" name="SoSeL21.structure.Boolean" flags="ng" index="2ukHBs" />
       <concept id="4161103506187198325" name="SoSeL21.structure.SoSeWorksheet" flags="ng" index="2ulaFy">
         <child id="4161103506187356639" name="contents" index="2ukjL8" />
@@ -470,6 +476,13 @@
     <node concept="21VEgC" id="2LgooMDkRVi" role="2ukjL8">
       <node concept="21wt1D" id="2LgooMDkT93" role="21VEnd">
         <property role="21wt1G" value="true" />
+      </node>
+    </node>
+    <node concept="252pJS" id="2LgooMDmQrP" role="2ukjL8">
+      <node concept="21wt1D" id="2LgooMDmQut" role="252pJV" />
+      <node concept="21VEgC" id="2LgooMDmQux" role="252pJP">
+        <node concept="21wt1D" id="2LgooMDmQuA" role="21VEnd" />
+        <node concept="252Ko_" id="2LgooMDndQb" role="21VEnf" />
       </node>
     </node>
   </node>

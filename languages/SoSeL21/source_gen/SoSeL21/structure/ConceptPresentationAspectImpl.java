@@ -17,6 +17,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_BoolVal;
   private ConceptPresentation props_Boolean;
   private ConceptPresentation props_Division;
+  private ConceptPresentation props_ForStatement;
   private ConceptPresentation props_GreaterEqualExpression;
   private ConceptPresentation props_GreaterExpression;
   private ConceptPresentation props_IContent;
@@ -38,6 +39,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Statement;
   private ConceptPresentation props_Substraction;
   private ConceptPresentation props_UnequalExpression;
+  private ConceptPresentation props_WhileStatement;
 
   @Override
   @Nullable
@@ -98,6 +100,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Division = cpb.create();
         }
         return props_Division;
+      case LanguageConceptSwitch.ForStatement:
+        if (props_ForStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ForStatement = cpb.create();
+        }
+        return props_ForStatement;
       case LanguageConceptSwitch.GreaterEqualExpression:
         if (props_GreaterEqualExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -239,6 +248,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_UnequalExpression = cpb.create();
         }
         return props_UnequalExpression;
+      case LanguageConceptSwitch.WhileStatement:
+        if (props_WhileStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_WhileStatement = cpb.create();
+        }
+        return props_WhileStatement;
     }
     return null;
   }

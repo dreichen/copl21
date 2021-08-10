@@ -390,5 +390,61 @@
       <ref role="PrY4T" node="2cuvxf1MdD0" resolve="IContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2LgooMDmvDO">
+    <property role="EcuMT" value="3193159392570243700" />
+    <property role="3GE5qa" value="controlflow" />
+    <property role="TrG5h" value="WhileStatement" />
+    <property role="34LRSv" value="while" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2LgooMDmvDP" role="PzmwI">
+      <ref role="PrY4T" node="1F3tG2rbtbA" resolve="Statement" />
+    </node>
+    <node concept="1TJgyj" id="2LgooMDmvDR" role="1TKVEi">
+      <property role="IQ2ns" value="3193159392570243703" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="condition" />
+      <ref role="20lvS9" node="2LgooMDkQ5l" resolve="IntExpression" />
+    </node>
+    <node concept="1TJgyj" id="2LgooMDmvDT" role="1TKVEi">
+      <property role="IQ2ns" value="3193159392570243705" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <ref role="20lvS9" node="2cuvxf1MdD0" resolve="IContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2LgooMDmQuD">
+    <property role="EcuMT" value="3193159392570337193" />
+    <property role="3GE5qa" value="controlflow" />
+    <property role="TrG5h" value="ForStatement" />
+    <property role="34LRSv" value="for" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2LgooMDmQuE" role="PzmwI">
+      <ref role="PrY4T" node="1F3tG2rbtbA" resolve="Statement" />
+    </node>
+    <node concept="1TJgyj" id="2LgooMDmQuG" role="1TKVEi">
+      <property role="IQ2ns" value="3193159392570337196" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="init" />
+      <ref role="20lvS9" node="qPnaaOdMd9" resolve="Int" />
+    </node>
+    <node concept="1TJgyj" id="2LgooMDmQuI" role="1TKVEi">
+      <property role="IQ2ns" value="3193159392570337198" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="limit" />
+      <ref role="20lvS9" node="2LgooMDkQ5l" resolve="IntExpression" />
+    </node>
+    <node concept="1TJgyj" id="2LgooMDmQuL" role="1TKVEi">
+      <property role="IQ2ns" value="3193159392570337201" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="iteration" />
+      <ref role="20lvS9" node="2cuvxf1Mjar" resolve="Assignment" />
+    </node>
+    <node concept="1TJgyj" id="2LgooMDmQEl" role="1TKVEi">
+      <property role="IQ2ns" value="3193159392570337941" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <ref role="20lvS9" node="2cuvxf1MdD0" resolve="IContent" />
+    </node>
+  </node>
 </model>
 
