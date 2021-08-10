@@ -17,6 +17,7 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -454,8 +455,10 @@
         <node concept="3F0ifn" id="2LgooMDrIpy" role="3EZMnx">
           <property role="3F0ifm" value="(" />
         </node>
-        <node concept="3F1sOY" id="2LgooMDs6OG" role="3EZMnx">
+        <node concept="3F2HdR" id="2LgooMDu3oU" role="3EZMnx">
+          <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="v8ga:2LgooMDrHqE" resolve="params" />
+          <node concept="2iRfu4" id="2LgooMDu3oX" role="2czzBx" />
         </node>
         <node concept="3F0ifn" id="2LgooMDrIq1" role="3EZMnx">
           <property role="3F0ifm" value=")" />

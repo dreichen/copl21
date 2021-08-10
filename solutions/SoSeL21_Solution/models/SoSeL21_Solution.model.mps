@@ -11,7 +11,6 @@
         <property id="1928515635055339180" name="value" index="21wt1G" />
       </concept>
       <concept id="1928515635055506378" name="SoSeL21.structure.OrExpression" flags="ng" index="21x$ka" />
-      <concept id="1928515635055482993" name="SoSeL21.structure.AndExpression" flags="ng" index="21xUUL" />
       <concept id="1928515635053610528" name="SoSeL21.structure.LessExpression" flags="ng" index="21UN3w" />
       <concept id="1928515635053974248" name="SoSeL21.structure.IfStatement" flags="ng" index="21VEgC">
         <child id="1928515635053974285" name="condition" index="21VEnd" />
@@ -26,6 +25,7 @@
         <child id="3193159392571928055" name="type" index="258WLV" />
       </concept>
       <concept id="3193159392571814244" name="SoSeL21.structure.BoolType" flags="ng" index="258p3C" />
+      <concept id="3193159392571814243" name="SoSeL21.structure.IntType" flags="ng" index="258p3J" />
       <concept id="3193159392571610784" name="SoSeL21.structure.FunctionDeclaration" flags="ng" index="25fFsG">
         <child id="3193159392571814245" name="returnType" index="258p3D" />
         <child id="3193159392571610794" name="params" index="25fFsA" />
@@ -467,13 +467,8 @@
         <property role="21wt1G" value="true" />
       </node>
     </node>
-    <node concept="21xUUL" id="1F3tG2rhqiN" role="2ukjL8">
-      <node concept="21wt1D" id="1F3tG2rhqlf" role="2Mw16U">
-        <property role="21wt1G" value="true" />
-      </node>
-      <node concept="21wt1D" id="1F3tG2rhqlh" role="2Mw16S">
-        <property role="21wt1G" value="true" />
-      </node>
+    <node concept="21wt1D" id="1F3tG2rhqlf" role="2ukjL8">
+      <property role="21wt1G" value="true" />
     </node>
     <node concept="21x$ka" id="1F3tG2rhqzi" role="2ukjL8">
       <node concept="21wt1D" id="1F3tG2rhq_L" role="2Mw16U" />
@@ -496,9 +491,13 @@
     <node concept="25fFsG" id="2LgooMDsUP3" role="2ukjL8">
       <property role="TrG5h" value="as" />
       <node concept="258p3C" id="2LgooMDtjdI" role="258p3D" />
-      <node concept="2583x2" id="2LgooMDu2d$" role="25fFsA">
-        <property role="TrG5h" value="bool" />
-        <node concept="258p3C" id="2LgooMDu2dC" role="258WLV" />
+      <node concept="2583x2" id="2LgooMDur6W" role="25fFsA">
+        <property role="TrG5h" value="as" />
+        <node concept="258p3C" id="2LgooMDur70" role="258WLV" />
+      </node>
+      <node concept="2583x2" id="2LgooMDur73" role="25fFsA">
+        <property role="TrG5h" value="sa2" />
+        <node concept="258p3J" id="2LgooMDur7c" role="258WLV" />
       </node>
     </node>
   </node>

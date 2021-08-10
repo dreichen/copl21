@@ -251,7 +251,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/3193159392571610784");
     b.version(2);
-    b.aggregate("params", 0x2c50618ca96ed6aaL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x2c50618ca97059ceL).optional(true).ordered(true).multiple(false).origin("3193159392571610794").done();
+    b.aggregate("params", 0x2c50618ca96ed6aaL).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x2c50618ca97059ceL).optional(true).ordered(true).multiple(true).origin("3193159392571610794").done();
     b.aggregate("returnType", 0x2c50618ca971f165L).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x2c50618ca9739bd3L).optional(false).ordered(true).multiple(false).origin("3193159392571814245").done();
     b.aggregate("body", 0x2c50618ca96ed6b2L).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x231e7e13c1c8da40L).optional(true).ordered(true).multiple(false).origin("3193159392571610802").done();
     b.alias("fun");
@@ -264,7 +264,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:03768692-7970-42cd-b446-2b0e8b37fedb(SoSeL21.structure)/3193159392571709902");
     b.version(2);
     b.aggregate("type", 0x2c50618ca973adf7L).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x2c50618ca9739bd3L).optional(false).ordered(true).multiple(false).origin("3193159392571928055").done();
-    b.aggregate("next", 0x2c50618ca97059d9L).target(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x2c50618ca97059ceL).optional(true).ordered(true).multiple(false).origin("3193159392571709913").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForGreaterEqualExpression() {
