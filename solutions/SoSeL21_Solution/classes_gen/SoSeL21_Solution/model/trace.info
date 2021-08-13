@@ -1,3 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2" />
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <root nodeRef="r:94bd7852-cbd5-4e48-affe-58ea37457392(SoSeL21_Solution.model)/1989212944787384328">
+    <file name="map_toJavaCode.java">
+      <node id="2530598663949487094" at="7,0,8,0" concept="0" trace="tester" />
+      <node id="2530598663949551125" at="8,0,9,0" concept="0" trace="num" />
+      <node id="3193159392569824147" at="9,0,10,0" concept="0" trace="num" />
+      <node id="6844863898947716509" at="10,0,11,0" concept="0" trace="test" />
+      <node id="6844863898947716514" at="11,0,12,0" concept="0" trace="test2" />
+      <node id="6844863898947746332" at="12,0,13,0" concept="0" trace="moin" />
+      <unit id="1989212944787384328" at="6,0,14,0" name="SoSeL21_Solution.model.map_toJavaCode" />
+    </file>
+  </root>
+  <root nodeRef="r:94bd7852-cbd5-4e48-affe-58ea37457392(SoSeL21_Solution.model)/6844863898947746265">
+    <file name="map_toJavaCode.java">
+      <node id="6844863898947746288" at="7,0,8,0" concept="0" trace="integer" />
+      <node id="6844863898947746275" at="8,0,9,0" concept="0" trace="test" />
+      <unit id="6844863898947746265" at="6,0,10,0" name="SoSeL21_Solution.model.map_toJavaCode" />
+    </file>
+  </root>
+</debug-info>
 
