@@ -448,8 +448,8 @@
   </node>
   <node concept="1TIwiD" id="2LgooMDrHqw">
     <property role="EcuMT" value="3193159392571610784" />
-    <property role="3GE5qa" value="controlflow" />
-    <property role="TrG5h" value="FunctionDeclaration" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="Function" />
     <property role="34LRSv" value="fun" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2LgooMDrHqx" role="PzmwI">
@@ -517,6 +517,28 @@
     <property role="TrG5h" value="Type" />
     <node concept="PrWs8" id="2LgooMDsTJm" role="PrDN$">
       <ref role="PrY4T" to="tpck:hLJPP0O" resolve="IWrapper" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6$UF01dI$MG">
+    <property role="EcuMT" value="7582562039935683756" />
+    <property role="3GE5qa" value="controlflow" />
+    <property role="TrG5h" value="FuncCall" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6$UF01dI$MH" role="PzmwI">
+      <ref role="PrY4T" node="1F3tG2rbtbA" resolve="Statement" />
+    </node>
+    <node concept="1TJgyj" id="6$UF01dI$MJ" role="1TKVEi">
+      <property role="IQ2ns" value="7582562039935683759" />
+      <property role="20kJfa" value="callee" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2LgooMDrHqw" resolve="Function" />
+    </node>
+    <node concept="1TJgyj" id="6$UF01dJ$Gr" role="1TKVEi">
+      <property role="IQ2ns" value="7582562039935945499" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2LgooMDkQ5l" resolve="IntExpression" />
     </node>
   </node>
 </model>

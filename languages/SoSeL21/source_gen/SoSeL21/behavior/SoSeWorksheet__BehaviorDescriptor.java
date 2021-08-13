@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
-import jetbrains.mps.core.aspects.behaviour.SModifiersImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,9 +25,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class SoSeWorksheet__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7e642a5f6d9b49f5L, 0x815956089ac1a1e9L, 0x39bf3597a7eb9f75L, "SoSeL21.structure.SoSeWorksheet");
 
-  public static final SMethod<Iterable<SNode>> definitions_id5VXPRdgECQo = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("definitions").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5VXPRdgECQo").build();
-  public static final SMethod<Iterable<SNode>> integers_id5Iic23oyJqE = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("integers").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5Iic23oyJqE").build();
-  public static final SMethod<Iterable<SNode>> booleans_id5Iic23oyNqu = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("booleans").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("5Iic23oyNqu").build();
+  public static final SMethod<Iterable<SNode>> definitions_id5VXPRdgECQo = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("definitions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5VXPRdgECQo").build();
+  public static final SMethod<Iterable<SNode>> integers_id5Iic23oyJqE = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("integers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5Iic23oyJqE").build();
+  public static final SMethod<Iterable<SNode>> booleans_id5Iic23oyNqu = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("booleans").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5Iic23oyNqu").build();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(definitions_id5VXPRdgECQo, integers_id5Iic23oyJqE, booleans_id5Iic23oyNqu);
 

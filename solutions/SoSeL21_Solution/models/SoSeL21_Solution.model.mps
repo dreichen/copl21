@@ -11,6 +11,7 @@
         <property id="1928515635055339180" name="value" index="21wt1G" />
       </concept>
       <concept id="1928515635055506378" name="SoSeL21.structure.OrExpression" flags="ng" index="21x$ka" />
+      <concept id="1928515635055482993" name="SoSeL21.structure.AndExpression" flags="ng" index="21xUUL" />
       <concept id="1928515635053610528" name="SoSeL21.structure.LessExpression" flags="ng" index="21UN3w" />
       <concept id="1928515635053610538" name="SoSeL21.structure.UnequalExpression" flags="ng" index="21UN3E" />
       <concept id="1928515635053974248" name="SoSeL21.structure.IfStatement" flags="ng" index="21VEgC">
@@ -27,7 +28,7 @@
       </concept>
       <concept id="3193159392571814244" name="SoSeL21.structure.BoolType" flags="ng" index="258p3C" />
       <concept id="3193159392571814243" name="SoSeL21.structure.IntType" flags="ng" index="258p3J" />
-      <concept id="3193159392571610784" name="SoSeL21.structure.FunctionDeclaration" flags="ng" index="25fFsG">
+      <concept id="3193159392571610784" name="SoSeL21.structure.Function" flags="ng" index="25fFsG">
         <child id="3193159392571814245" name="returnType" index="258p3D" />
         <child id="3193159392571610794" name="params" index="25fFsA" />
       </concept>
@@ -37,6 +38,10 @@
       </concept>
       <concept id="1610976182720910041" name="SoSeL21.structure.ParenthesisExpression" flags="ng" index="2uUCik">
         <child id="1610976182720910507" name="expression" index="2uUCbA" />
+      </concept>
+      <concept id="7582562039935683756" name="SoSeL21.structure.FuncCall" flags="ng" index="$we2G">
+        <reference id="7582562039935683759" name="callee" index="$we2J" />
+        <child id="7582562039935945499" name="arguments" index="$xesr" />
       </concept>
       <concept id="1989212944787468230" name="SoSeL21.structure.Reference" flags="ng" index="1ncnl$">
         <reference id="6844863898947578813" name="definition" index="elVNe" />
@@ -515,6 +520,28 @@
       </node>
     </node>
     <node concept="252Ko_" id="6$UF01dwi9_" role="2ukjL8" />
+    <node concept="$we2G" id="6$UF01dK_4O" role="2ukjL8">
+      <ref role="$we2J" node="2LgooMDsUP3" resolve="as" />
+      <node concept="21UN3w" id="6$UF01dLb7L" role="$xesr">
+        <node concept="3yPOM6" id="6$UF01dLb7N" role="2Mw16U">
+          <node concept="1ImbOi" id="6$UF01dLb7P" role="2Mw16U">
+            <property role="1ImbOn" value="3" />
+          </node>
+          <node concept="1ImbOi" id="6$UF01dLb7R" role="2Mw16S">
+            <property role="1ImbOn" value="2" />
+          </node>
+        </node>
+        <node concept="1ImbOi" id="6$UF01dLb7T" role="2Mw16S">
+          <property role="1ImbOn" value="3" />
+        </node>
+      </node>
+      <node concept="21xUUL" id="6$UF01dLb8a" role="$xesr">
+        <node concept="21wt1D" id="6$UF01dLb8i" role="2Mw16U" />
+        <node concept="21wt1D" id="6$UF01dLb8k" role="2Mw16S">
+          <property role="21wt1G" value="true" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2ulaFy" id="5VXPRdgFfBp">
     <property role="TrG5h" value="ws2" />
