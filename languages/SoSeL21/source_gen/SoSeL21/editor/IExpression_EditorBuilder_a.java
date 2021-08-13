@@ -26,14 +26,19 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
+import java.awt.Color;
+import java.awt.SystemColor;
 import com.mbeddr.mpsutil.grammarcells.runtime.ConstantSubstituteInfo;
 import java.util.List;
 import com.mbeddr.mpsutil.grammarcells.runtime.IToken;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import com.mbeddr.mpsutil.grammarcells.runtime.ChildToken;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -199,6 +204,9 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       if (editorCell.getSRole() == null) {
         editorCell.setSRole(LINKS.left$XEZB);
       }
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.BACKGROUND_COLOR, StyleRegistry.getInstance().getSimpleColor(_StyleParameter_QueryFunction_3hqy1x_a0a0a()));
+      editorCell.getStyle().putAll(style);
     }
     @Override
     protected EditorCell createEmptyCell() {
@@ -216,6 +224,12 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
     protected String getNoTargetText() {
       return "<no left>";
+    }
+    private Color _StyleParameter_QueryFunction_3hqy1x_a0a0a() {
+      if ((SLinkOperations.getTarget(getNode(), LINKS.left$XEZB) == null)) {
+        return Color.RED;
+      }
+      return SystemColor.WHITE;
     }
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
@@ -468,6 +482,9 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       if (editorCell.getSRole() == null) {
         editorCell.setSRole(LINKS.right$XFtD);
       }
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.BACKGROUND_COLOR, StyleRegistry.getInstance().getSimpleColor(_StyleParameter_QueryFunction_3hqy1x_a0a2a()));
+      editorCell.getStyle().putAll(style);
     }
     @Override
     protected EditorCell createEmptyCell() {
@@ -485,6 +502,12 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
     protected String getNoTargetText() {
       return "<no right>";
+    }
+    private Color _StyleParameter_QueryFunction_3hqy1x_a0a2a() {
+      if ((SLinkOperations.getTarget(getNode(), LINKS.right$XFtD) == null)) {
+        return Color.RED;
+      }
+      return SystemColor.WHITE;
     }
   }
 
